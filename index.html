@@ -1,231 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyLMS - Learning Management System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Data Science Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background:#1e293b;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+section{
+    min-height:100vh;
+    padding:100px 8%;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.hero-text h1{
+    font-size:60px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    margin-top:20px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.profile{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    object-fit:cover;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.skills-grid,
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    background:#1e293b;
+    padding:20px;
+}
+</style>
 </head>
-
 <body>
 
 <header>
-
-<div class="logo">
-    MyLMS
-</div>
-
-<nav id="navbar">
-
-<a href="#">Home</a>
-<a href="#courses">Courses</a>
-<a href="#features">Features</a>
-<a href="#contact">Contact</a>
-
-<button id="themeBtn">
-🌙
-</button>
-
-</nav>
-
-<div id="menuBtn">
-☰
-</div>
-
+    <div class="logo">Your Name</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Hello, I'm <span>Your Name</span></h1>
+        <h2>Aspiring Data Scientist</h2>
 
-<section class="hero">
+        <p>
+            Undergraduate Data Science student passionate about Machine Learning,
+            AI, Data Analytics, and turning data into actionable insights.
+        </p>
 
-<div class="hero-text">
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
 
-<h1>Learn Without Limits</h1>
+    <img src="profile.jpg" class="profile" alt="Profile Image">
+</section>
 
-<p>
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Me</h2>
 
-Start learning Programming, AI, Machine Learning and many more professional courses.
+    <p>
+        I am an undergraduate Data Science student interested in Machine Learning,
+        Artificial Intelligence, Data Visualization, and Analytics. I enjoy solving
+        real-world problems using data and continuously learning new technologies.
+    </p>
+</section>
 
-</p>
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
 
-<button>
+    <div class="skills-grid">
 
-Get Started
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Python<br>R<br>SQL<br>Java</p>
+        </div>
 
-</button>
+        <div class="card">
+            <h3>Machine Learning</h3>
+            <p>Scikit-Learn<br>TensorFlow<br>Pandas<br>NumPy</p>
+        </div>
 
-</div>
+        <div class="card">
+            <h3>Visualization</h3>
+            <p>Matplotlib<br>Seaborn<br>Tableau<br>Power BI</p>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Git<br>GitHub<br>Jupyter Notebook<br>Linux</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="card">
+            <h3>Customer Churn Prediction</h3>
+            <p>
+                Developed a machine learning model to predict customer churn using Python and Scikit-Learn.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>House Price Prediction</h3>
+            <p>
+                Regression model for predicting house prices with feature engineering techniques.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sentiment Analysis</h3>
+            <p>
+                NLP project for analyzing sentiments from text data.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sales Dashboard</h3>
+            <p>
+                Interactive dashboard created using Power BI and Tableau.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact</h2>
+
+    <p>Email: yourname@email.com</p>
+    <p>LinkedIn: linkedin.com/in/yourname</p>
+    <p>GitHub: github.com/yourusername</p>
+    <p>Kaggle: kaggle.com/yourusername</p>
+
+    <br>
+
+    <a class="btn" href="mailto:yourname@email.com">
+        Send Email
+    </a>
 
 </section>
 
-
-
-<section id="courses">
-
-<h2 class="title">
-
-Popular Courses
-
-</h2>
-
-<div class="course-container">
-
-<div class="card">
-
-<img src="images/web.jpg">
-
-<h3>Web Development</h3>
-
-<p>
-
-HTML CSS JavaScript
-
-</p>
-
-<button>
-
-View Course
-
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="images/python.jpg">
-
-<h3>Python Programming</h3>
-
-<p>
-
-Python From Beginner to Advanced
-
-</p>
-
-<button>
-
-View Course
-
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="images/data.jpg">
-
-<h3>Data Science</h3>
-
-<p>
-
-Machine Learning & AI
-
-</p>
-
-<button>
-
-View Course
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="features">
-
-<h2 class="title">
-
-Why Choose Us?
-
-</h2>
-
-<div class="feature-container">
-
-<div class="feature">
-
-<h3>🎥 Video Lessons</h3>
-
-<p>
-
-Watch HD quality videos.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<h3>📄 Notes</h3>
-
-<p>
-
-Download PDF materials.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<h3>📝 Quiz</h3>
-
-<p>
-
-Practice after every lesson.
-
-</p>
-
-</div>
-
-<div class="feature">
-
-<h3>🏆 Certificate</h3>
-
-<p>
-
-Earn your certificate.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<footer id="contact">
-
-<h2>
-
-Contact Us
-
-</h2>
-
-<p>
-
-Email : mylms@gmail.com
-
-</p>
-
-<p>
-
-© 2026 MyLMS
-
-</p>
-
+<footer>
+    <p>© 2026 Your Name | Data Science Portfolio</p>
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
