@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MyLMS - Student Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body class="dashboard-body">
+
+
+<!-- =========================
+     SIDEBAR
+========================= -->
+
+<aside class="sidebar">
+
+    <div class="dashboard-logo">
+        MyLMS
+    </div>
+
+
+    <div class="student-profile">
+
+        <div class="profile-avatar">
+            👨‍🎓
+        </div>
+
+        <h3>
+            Student
+        </h3>
+
+        <p>
+            student@mylms.com
+        </p>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <a href="#" class="active">
+            🏠 Dashboard
+        </a>
+
+        <a href="#">
+            📚 My Courses
+        </a>
+
+        <a href="#">
+            ❤️ Wishlist
+        </a>
+
+        <a href="#">
+            📝 My Quizzes
+        </a>
+
+        <a href="#">
+            🏆 Certificates
+        </a>
+
+        <a href="#">
+            ⚙️ Settings
+        </a>
+
+        <a href="index.html">
+            🚪 Logout
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+
+<main class="dashboard-main">
+
+
+    <!-- TOP BAR -->
+
+    <div class="dashboard-topbar">
+
+        <div>
+
+            <h1>
+                Welcome Back! 👋
+            </h1>
+
+            <p>
+                Continue learning and achieve your goals.
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-actions">
+
+            <button id="dashboardTheme">
+                🌙
+            </button>
+
+            <div class="notification">
+                🔔
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         STATISTICS
+    ========================= -->
+
+    <div class="dashboard-stats">
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📚
+            </div>
+
+            <div>
+
+                <h2>
+                    5
+                </h2>
+
+                <p>
+                    Enrolled Courses
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🎯
+            </div>
+
+            <div>
+
+                <h2>
+                    3
+                </h2>
+
+                <p>
+                    Completed Courses
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📝
+            </div>
+
+            <div>
+
+                <h2>
+                    12
+                </h2>
+
+                <p>
+                    Quizzes Completed
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🏆
+            </div>
+
+            <div>
+
+                <h2>
+                    2
+                </h2>
+
+                <p>
+                    Certificates
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         CONTINUE LEARNING
+    ========================= -->
+
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+
+            <h2>
+                Continue Learning
+            </h2>
+
+            <a href="#">
+                View All
+            </a>
+
+        </div>
+
+
+        <div class="learning-container">
+
+
+            <!-- COURSE -->
+
+            <div class="learning-card">
+
+                <img
+                    src="images/web.jpg"
+                    alt="Web Development"
+                >
+
+                <div class="learning-info">
+
+                    <span>
+                        Web Development
+                    </span>
+
+                    <h3>
+                        Complete HTML & CSS
+                    </h3>
+
+                    <p>
+                        Lesson 8 of 20
+                    </p>
+
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-bar"
+                            style="width:65%;"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="progress-text">
+
+                        <span>
+                            65% Completed
+                        </span>
+
+                        <button>
+                            Continue
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COURSE -->
+
+            <div class="learning-card">
+
+                <img
+                    src="images/python.jpg"
+                    alt="Python"
+                >
+
+                <div class="learning-info">
+
+                    <span>
+                        Programming
+                    </span>
+
+                    <h3>
+                        Python Programming
+                    </h3>
+
+                    <p>
+                        Lesson 5 of 15
+                    </p>
+
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-bar"
+                            style="width:40%;"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="progress-text">
+
+                        <span>
+                            40% Completed
+                        </span>
+
+                        <button>
+                            Continue
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         RECENT COURSES
+    ========================= -->
+
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+
+            <h2>
+                Recommended Courses
+            </h2>
+
+            <a href="#">
+                View All
+            </a>
+
+        </div>
+
+
+        <div class="recommended-container">
+
+
+            <div class="recommended-card">
+
+                <img
+                    src="images/data.jpg"
+                    alt="Data Science"
+                >
+
+                <div>
+
+                    <span>
+                        Data Science
+                    </span>
+
+                    <h3>
+                        Machine Learning & AI
+                    </h3>
+
+                    <p>
+                        ⭐ 4.9 | 25 Lessons
+                    </p>
+
+                    <button>
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="recommended-card">
+
+                <img
+                    src="images/web.jpg"
+                    alt="JavaScript"
+                >
+
+                <div>
+
+                    <span>
+                        Web Development
+                    </span>
+
+                    <h3>
+                        JavaScript Masterclass
+                    </h3>
+
+                    <p>
+                        ⭐ 4.8 | 30 Lessons
+                    </p>
+
+                    <button>
+                        Enroll Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CERTIFICATE
+    ========================= -->
+
+    <section class="certificate-box">
+
+        <div>
+
+            <span>
+                🏆
+            </span>
+
+            <h2>
+                Congratulations!
+            </h2>
+
+            <p>
+                You have completed the
+                Python Programming course.
+            </p>
+
+        </div>
+
+
+        <button>
+            View Certificate
+        </button>
+
+    </section>
+
+
+</main>
+
+
+<script>
+
+
+// Dashboard Dark Mode
+
+const dashboardTheme =
+    document.getElementById("dashboardTheme");
+
+
+dashboardTheme.addEventListener("click", function(){
+
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+
+        dashboardTheme.innerHTML = "☀️";
+
+        localStorage.setItem("theme","dark");
+
+    }else{
+
+        dashboardTheme.innerHTML = "🌙";
+
+        localStorage.setItem("theme","light");
+
+    }
+
+});
+
+
+// Load Theme
+
+if(localStorage.getItem("theme") === "dark"){
+
+    document.body.classList.add("dark");
+
+    dashboardTheme.innerHTML = "☀️";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
