@@ -143,3 +143,186 @@ modal.style.display="none";
 }
 
 }
+
+// ==============================
+// REGISTER MODAL
+// ==============================
+
+const registerLink =
+    document.getElementById("registerLink");
+
+const registerModal =
+    document.getElementById("registerModal");
+
+const closeRegister =
+    document.getElementById("closeRegister");
+
+const backToLogin =
+    document.getElementById("backToLogin");
+
+
+// Open Register
+
+registerLink.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    loginModal.style.display = "none";
+
+    registerModal.style.display = "flex";
+
+});
+
+
+// Close Register
+
+closeRegister.addEventListener("click", function(){
+
+    registerModal.style.display = "none";
+
+});
+
+
+// Back to Login
+
+backToLogin.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    registerModal.style.display = "none";
+
+    loginModal.style.display = "flex";
+
+});
+
+
+// ==============================
+// PASSWORD SHOW / HIDE
+// ==============================
+
+const registerPassword =
+    document.getElementById("registerPassword");
+
+const togglePassword =
+    document.getElementById("togglePassword");
+
+togglePassword.addEventListener("click", function(){
+
+    if(registerPassword.type === "password"){
+
+        registerPassword.type = "text";
+
+        togglePassword.innerHTML = "🙈";
+
+    }else{
+
+        registerPassword.type = "password";
+
+        togglePassword.innerHTML = "👁️";
+
+    }
+
+});
+
+
+// Confirm Password
+
+const confirmPassword =
+    document.getElementById("confirmPassword");
+
+const toggleConfirmPassword =
+    document.getElementById("toggleConfirmPassword");
+
+toggleConfirmPassword.addEventListener("click", function(){
+
+    if(confirmPassword.type === "password"){
+
+        confirmPassword.type = "text";
+
+        toggleConfirmPassword.innerHTML = "🙈";
+
+    }else{
+
+        confirmPassword.type = "password";
+
+        toggleConfirmPassword.innerHTML = "👁️";
+
+    }
+
+});
+
+
+// ==============================
+// REGISTER VALIDATION
+// ==============================
+
+const registerSubmit =
+    document.getElementById("registerSubmit");
+
+registerSubmit.addEventListener("click", function(){
+
+    const name =
+        document.getElementById("registerName").value.trim();
+
+    const email =
+        document.getElementById("registerEmail").value.trim();
+
+    const password =
+        registerPassword.value;
+
+    const confirm =
+        confirmPassword.value;
+
+
+    if(name === "" || email === "" || password === "" || confirm === ""){
+
+        alert("Please fill in all fields.");
+
+        return;
+
+    }
+
+
+    if(password.length < 6){
+
+        alert("Password must contain at least 6 characters.");
+
+        return;
+
+    }
+
+
+    if(password !== confirm){
+
+        alert("Passwords do not match.");
+
+        return;
+
+    }
+
+
+    alert(
+        "Registration successful! Database connection will be added later."
+    );
+
+    registerModal.style.display = "none";
+
+});
+
+
+// ==============================
+// FORGOT PASSWORD
+// ==============================
+
+const forgotPassword =
+    document.getElementById("forgotPassword");
+
+forgotPassword.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    alert(
+        "Password recovery system will be connected with PHP and MySQL later."
+    );
+
+});
