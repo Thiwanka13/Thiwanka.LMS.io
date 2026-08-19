@@ -1,152 +1,213 @@
-// ==============================
-// Mobile Menu
-// ==============================
+// ========================================
+// MyLMS - MAIN JAVASCRIPT
+// ========================================
+
+
+// ========================================
+// MOBILE MENU
+// ========================================
 
 const menuBtn = document.getElementById("menuBtn");
 const navbar = document.getElementById("navbar");
 
-menuBtn.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-});
+if (menuBtn && navbar) {
+
+    menuBtn.addEventListener("click", () => {
+
+        navbar.classList.toggle("active");
+
+    });
+
+}
 
 
-// ==============================
-// Dark / Light Mode
-// ==============================
+// ========================================
+// DARK / LIGHT MODE
+// ========================================
 
 const themeBtn = document.getElementById("themeBtn");
 
-themeBtn.addEventListener("click", () => {
+if (themeBtn) {
 
-    document.body.classList.toggle("dark");
+    themeBtn.addEventListener("click", () => {
 
-    if(document.body.classList.contains("dark")){
-        themeBtn.innerHTML = "☀️";
-        localStorage.setItem("theme","dark");
-    }else{
-        themeBtn.innerHTML = "🌙";
-        localStorage.setItem("theme","light");
-    }
+        document.body.classList.toggle("dark");
 
-});
+        if (document.body.classList.contains("dark")) {
 
+            themeBtn.innerHTML = "☀️";
 
-// ==============================
-// Load Saved Theme
-// ==============================
+            localStorage.setItem("theme", "dark");
 
-window.onload = function(){
+        } else {
 
-    const theme = localStorage.getItem("theme");
+            themeBtn.innerHTML = "🌙";
 
-    if(theme==="dark"){
-        document.body.classList.add("dark");
-        themeBtn.innerHTML="☀️";
-    }
-
-};
-
-
-// ==============================
-// Smooth Button Click
-// ==============================
-
-const heroBtn = document.querySelector(".hero button");
-
-heroBtn.addEventListener("click",()=>{
-
-    document.getElementById("courses").scrollIntoView({
-
-        behavior:"smooth"
-
-    });
-
-});
-
-
-// ==============================
-// Course Button Alert
-// ==============================
-
-const courseButtons = document.querySelectorAll(".card button");
-
-courseButtons.forEach(button=>{
-
-    button.addEventListener("click",()=>{
-
-        alert("Course Details Page will be added in the next version.");
-
-    });
-
-});
-
-
-// ==============================
-// Scroll Animation
-// ==============================
-
-const cards=document.querySelectorAll(".card,.feature");
-
-const observer=new IntersectionObserver(entries=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.style.opacity="1";
-            entry.target.style.transform="translateY(0)";
+            localStorage.setItem("theme", "light");
 
         }
 
     });
 
+}
+
+
+// ========================================
+// LOAD SAVED THEME
+// ========================================
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+
+    document.body.classList.add("dark");
+
+    if (themeBtn) {
+        themeBtn.innerHTML = "☀️";
+    }
+
+}
+
+
+// ========================================
+// HERO - GET STARTED BUTTON
+// ========================================
+
+const heroBtn = document.getElementById("getStartedBtn");
+
+if (heroBtn) {
+
+    heroBtn.addEventListener("click", () => {
+
+        const courses = document.getElementById("courses");
+
+        if (courses) {
+
+            courses.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+    });
+
+}
+
+
+// ========================================
+// COURSE BUTTONS
+// ========================================
+
+const courseButtons =
+    document.querySelectorAll(".card button");
+
+courseButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        alert(
+            "Course Details Page will be added soon!"
+        );
+
+    });
+
 });
 
-cards.forEach(card=>{
 
-    card.style.opacity="0";
-    card.style.transform="translateY(40px)";
-    card.style.transition="0.6s";
+// ========================================
+// SCROLL ANIMATION
+// ========================================
 
-    observer.observe(card);
+const animatedElements =
+    document.querySelectorAll(".card, .feature");
 
-});
+if ("IntersectionObserver" in window) {
 
-// ======================
+    const observer =
+        new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.style.opacity = "1";
+
+                    entry.target.style.transform =
+                        "translateY(0)";
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        }, {
+
+            threshold: 0.15
+
+        });
+
+
+    animatedElements.forEach(element => {
+
+        element.style.opacity = "0";
+
+        element.style.transform =
+            "translateY(40px)";
+
+        element.style.transition =
+            "0.6s ease";
+
+        observer.observe(element);
+
+    });
+
+}
+
+
+// ========================================
 // LOGIN MODAL
-// ======================
+// ========================================
 
-const loginBtn=document.getElementById("loginBtn");
+const loginBtn =
+    document.getElementById("loginBtn");
 
-const modal=document.getElementById("loginModal");
+const loginModal =
+    document.getElementById("loginModal");
 
-const close=document.getElementById("closeModal");
+const closeModal =
+    document.getElementById("closeModal");
 
-loginBtn.onclick=()=>{
 
-modal.style.display="flex";
+/* OPEN LOGIN */
 
-}
+if (loginBtn && loginModal) {
 
-close.onclick=()=>{
+    loginBtn.addEventListener("click", () => {
 
-modal.style.display="none";
+        loginModal.style.display = "flex";
 
-}
-
-window.onclick=(e)=>{
-
-if(e.target==modal){
-
-modal.style.display="none";
+    });
 
 }
 
+
+/* CLOSE LOGIN */
+
+if (closeModal && loginModal) {
+
+    closeModal.addEventListener("click", () => {
+
+        loginModal.style.display = "none";
+
+    });
+
 }
 
-// ==============================
+
+// ========================================
 // REGISTER MODAL
-// ==============================
+// ========================================
 
 const registerLink =
     document.getElementById("registerLink");
@@ -161,44 +222,86 @@ const backToLogin =
     document.getElementById("backToLogin");
 
 
-// Open Register
+/* OPEN REGISTER */
 
-registerLink.addEventListener("click", function(e){
+if (registerLink && registerModal) {
 
-    e.preventDefault();
+    registerLink.addEventListener("click", (event) => {
 
-    loginModal.style.display = "none";
+        event.preventDefault();
 
-    registerModal.style.display = "flex";
+        if (loginModal) {
+            loginModal.style.display = "none";
+        }
+
+        registerModal.style.display = "flex";
+
+    });
+
+}
+
+
+/* CLOSE REGISTER */
+
+if (closeRegister && registerModal) {
+
+    closeRegister.addEventListener("click", () => {
+
+        registerModal.style.display = "none";
+
+    });
+
+}
+
+
+/* REGISTER → LOGIN */
+
+if (backToLogin && registerModal && loginModal) {
+
+    backToLogin.addEventListener("click", (event) => {
+
+        event.preventDefault();
+
+        registerModal.style.display = "none";
+
+        loginModal.style.display = "flex";
+
+    });
+
+}
+
+
+// ========================================
+// CLOSE MODALS BY CLICKING OUTSIDE
+// ========================================
+
+window.addEventListener("click", (event) => {
+
+    if (
+        loginModal &&
+        event.target === loginModal
+    ) {
+
+        loginModal.style.display = "none";
+
+    }
+
+
+    if (
+        registerModal &&
+        event.target === registerModal
+    ) {
+
+        registerModal.style.display = "none";
+
+    }
 
 });
 
 
-// Close Register
-
-closeRegister.addEventListener("click", function(){
-
-    registerModal.style.display = "none";
-
-});
-
-
-// Back to Login
-
-backToLogin.addEventListener("click", function(e){
-
-    e.preventDefault();
-
-    registerModal.style.display = "none";
-
-    loginModal.style.display = "flex";
-
-});
-
-
-// ==============================
+// ========================================
 // PASSWORD SHOW / HIDE
-// ==============================
+// ========================================
 
 const registerPassword =
     document.getElementById("registerPassword");
@@ -206,26 +309,33 @@ const registerPassword =
 const togglePassword =
     document.getElementById("togglePassword");
 
-togglePassword.addEventListener("click", function(){
 
-    if(registerPassword.type === "password"){
+if (registerPassword && togglePassword) {
 
-        registerPassword.type = "text";
+    togglePassword.addEventListener("click", () => {
 
-        togglePassword.innerHTML = "🙈";
+        if (registerPassword.type === "password") {
 
-    }else{
+            registerPassword.type = "text";
 
-        registerPassword.type = "password";
+            togglePassword.innerHTML = "🙈";
 
-        togglePassword.innerHTML = "👁️";
+        } else {
 
-    }
+            registerPassword.type = "password";
 
-});
+            togglePassword.innerHTML = "👁️";
+
+        }
+
+    });
+
+}
 
 
-// Confirm Password
+// ========================================
+// CONFIRM PASSWORD SHOW / HIDE
+// ========================================
 
 const confirmPassword =
     document.getElementById("confirmPassword");
@@ -233,96 +343,148 @@ const confirmPassword =
 const toggleConfirmPassword =
     document.getElementById("toggleConfirmPassword");
 
-toggleConfirmPassword.addEventListener("click", function(){
 
-    if(confirmPassword.type === "password"){
+if (confirmPassword && toggleConfirmPassword) {
 
-        confirmPassword.type = "text";
+    toggleConfirmPassword.addEventListener("click", () => {
 
-        toggleConfirmPassword.innerHTML = "🙈";
+        if (confirmPassword.type === "password") {
 
-    }else{
+            confirmPassword.type = "text";
 
-        confirmPassword.type = "password";
+            toggleConfirmPassword.innerHTML = "🙈";
 
-        toggleConfirmPassword.innerHTML = "👁️";
+        } else {
 
-    }
+            confirmPassword.type = "password";
 
-});
+            toggleConfirmPassword.innerHTML = "👁️";
+
+        }
+
+    });
+
+}
 
 
-// ==============================
+// ========================================
 // REGISTER VALIDATION
-// ==============================
+// ========================================
 
 const registerSubmit =
     document.getElementById("registerSubmit");
 
-registerSubmit.addEventListener("click", function(){
 
-    const name =
-        document.getElementById("registerName").value.trim();
+if (registerSubmit) {
 
-    const email =
-        document.getElementById("registerEmail").value.trim();
+    registerSubmit.addEventListener("click", () => {
 
-    const password =
-        registerPassword.value;
+        const name =
+            document.getElementById("registerName").value.trim();
 
-    const confirm =
-        confirmPassword.value;
+        const email =
+            document.getElementById("registerEmail").value.trim();
 
+        const password =
+            document.getElementById("registerPassword").value;
 
-    if(name === "" || email === "" || password === "" || confirm === ""){
-
-        alert("Please fill in all fields.");
-
-        return;
-
-    }
+        const confirm =
+            document.getElementById("confirmPassword").value;
 
 
-    if(password.length < 6){
+        // EMPTY FIELDS
 
-        alert("Password must contain at least 6 characters.");
+        if (
+            name === "" ||
+            email === "" ||
+            password === "" ||
+            confirm === ""
+        ) {
 
-        return;
+            alert(
+                "Please fill in all fields."
+            );
 
-    }
+            return;
 
-
-    if(password !== confirm){
-
-        alert("Passwords do not match.");
-
-        return;
-
-    }
-
-
-    alert(
-        "Registration successful! Database connection will be added later."
-    );
-
-    registerModal.style.display = "none";
-
-});
+        }
 
 
-// ==============================
+        // EMAIL VALIDATION
+
+        const emailPattern =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+        if (!emailPattern.test(email)) {
+
+            alert(
+                "Please enter a valid email address."
+            );
+
+            return;
+
+        }
+
+
+        // PASSWORD LENGTH
+
+        if (password.length < 6) {
+
+            alert(
+                "Password must contain at least 6 characters."
+            );
+
+            return;
+
+        }
+
+
+        // PASSWORD MATCH
+
+        if (password !== confirm) {
+
+            alert(
+                "Passwords do not match."
+            );
+
+            return;
+
+        }
+
+
+        // SUCCESS
+
+        alert(
+            "Registration successful!"
+        );
+
+
+        registerModal.style.display = "none";
+
+    });
+
+}
+
+
+// ========================================
 // FORGOT PASSWORD
-// ==============================
+// ========================================
 
 const forgotPassword =
     document.getElementById("forgotPassword");
 
-forgotPassword.addEventListener("click", function(e){
 
-    e.preventDefault();
+if (forgotPassword) {
 
-    alert(
-        "Password recovery system will be connected with PHP and MySQL later."
-    );
+    forgotPassword.addEventListener("click", (event) => {
 
-});
+        event.preventDefault();
+
+        alert(
+            "Password recovery will be connected with PHP and MySQL later."
+        );
+
+    });
+
+}
