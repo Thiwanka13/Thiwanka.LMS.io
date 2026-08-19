@@ -1,278 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>MyLMS - Learning Management System</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
-<div class="logo">
-    MyLMS
-</div>
-
-<nav id="navbar">
-
-<button id="loginBtn" class="login-btn">
-    Login
-</button>
+    <div class="logo">
+        MyLMS
+    </div>
 
 
-<a href="#">Home</a>
-<a href="#courses">Courses</a>
-<a href="#features">Features</a>
-<a href="#contact">Contact</a>
+    <nav id="navbar">
 
-<button id="themeBtn">
-🌙
-</button>
+        <a href="#">
+            Home
+        </a>
 
-</nav>
+        <a href="#courses">
+            Courses
+        </a>
 
-<div id="menuBtn">
-☰
-</div>
+        <a href="#features">
+            Features
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+
+        <!-- LOGIN BUTTON -->
+
+        <button
+            id="loginBtn"
+            class="login-btn"
+        >
+            Login
+        </button>
+
+
+        <!-- DARK MODE -->
+
+        <button id="themeBtn">
+            🌙
+        </button>
+
+    </nav>
+
+
+    <!-- MOBILE MENU -->
+
+    <div id="menuBtn">
+        ☰
+    </div>
 
 </header>
 
 
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
 <section class="hero">
 
-<div class="hero-text">
+    <div class="hero-text">
 
-<h1>Learn Without Limits</h1>
+        <h1>
+            Learn Without Limits
+        </h1>
 
-<p>
 
-Start learning Programming, AI, Machine Learning and many more professional courses.
+        <p>
 
-</p>
+            Start learning Programming, AI,
+            Machine Learning and many more
+            professional courses.
 
-<button>
+        </p>
 
-Get Started
 
-</button>
+        <button id="getStartedBtn">
 
-</div>
+            Get Started
+
+        </button>
+
+    </div>
 
 </section>
 
 
+
+<!-- =========================
+     COURSES
+========================= -->
 
 <section id="courses">
 
-<h2 class="title">
+    <h2 class="title">
 
-Popular Courses
+        Popular Courses
 
-</h2>
+    </h2>
 
-<div class="course-container">
 
-<div class="card">
+    <div class="course-container">
 
-<img src="images/web.jpg">
 
-<h3>Web Development</h3>
+        <!-- COURSE 1 -->
 
-<p>
+        <div class="card">
 
-HTML CSS JavaScript
+            <img
+                src="images/web.jpg"
+                alt="Web Development"
+            >
 
-</p>
+            <h3>
+                Web Development
+            </h3>
 
-<button>
+            <p>
+                HTML CSS JavaScript
+            </p>
 
-View Course
+            <button>
+                View Course
+            </button>
 
-</button>
+        </div>
 
-</div>
 
-<div class="card">
 
-<img src="images/python.jpg">
+        <!-- COURSE 2 -->
 
-<h3>Python Programming</h3>
+        <div class="card">
 
-<p>
+            <img
+                src="images/python.jpg"
+                alt="Python Programming"
+            >
 
-Python From Beginner to Advanced
+            <h3>
+                Python Programming
+            </h3>
 
-</p>
+            <p>
+                Python From Beginner to Advanced
+            </p>
 
-<button>
+            <button>
+                View Course
+            </button>
 
-View Course
+        </div>
 
-</button>
 
-</div>
 
-<div class="card">
+        <!-- COURSE 3 -->
 
-<img src="images/data.jpg">
+        <div class="card">
 
-<h3>Data Science</h3>
+            <img
+                src="images/data.jpg"
+                alt="Data Science"
+            >
 
-<p>
+            <h3>
+                Data Science
+            </h3>
 
-Machine Learning & AI
+            <p>
+                Machine Learning & AI
+            </p>
 
-</p>
+            <button>
+                View Course
+            </button>
 
-<button>
+        </div>
 
-View Course
 
-</button>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
+
+<!-- =========================
+     FEATURES
+========================= -->
 
 <section id="features">
 
-<h2 class="title">
+    <h2 class="title">
 
-Why Choose Us?
+        Why Choose Us?
 
-</h2>
+    </h2>
 
-<div class="feature-container">
 
-<div class="feature">
+    <div class="feature-container">
 
-<h3>🎥 Video Lessons</h3>
 
-<p>
+        <div class="feature">
 
-Watch HD quality videos.
+            <h3>
+                🎥 Video Lessons
+            </h3>
 
-</p>
+            <p>
+                Watch HD quality videos.
+            </p>
 
-</div>
+        </div>
 
-<div class="feature">
 
-<h3>📄 Notes</h3>
 
-<p>
+        <div class="feature">
 
-Download PDF materials.
+            <h3>
+                📄 Notes
+            </h3>
 
-</p>
+            <p>
+                Download PDF materials.
+            </p>
 
-</div>
+        </div>
 
-<div class="feature">
 
-<h3>📝 Quiz</h3>
 
-<p>
+        <div class="feature">
 
-Practice after every lesson.
+            <h3>
+                📝 Quiz
+            </h3>
 
-</p>
+            <p>
+                Practice after every lesson.
+            </p>
 
-</div>
+        </div>
 
-<div class="feature">
 
-<h3>🏆 Certificate</h3>
 
-<p>
+        <div class="feature">
 
-Earn your certificate.
+            <h3>
+                🏆 Certificate
+            </h3>
 
-</p>
+            <p>
+                Earn your certificate.
+            </p>
 
-</div>
+        </div>
 
-</div>
+
+    </div>
 
 </section>
 
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer id="contact">
 
-<h2>
-
-Contact Us
-
-</h2>
-
-<p>Email : mylms@gmail.com</p>
-<p>Whatsapp : +94771234567</p>
+    <h2>
+        Contact Us
+    </h2>
 
 
-© 2026 MyLMS
+    <p>
+        Email : mylms@gmail.com
+    </p>
 
-</p>
+
+    <p>
+        WhatsApp : +94771234567
+    </p>
+
+
+    <p>
+        © 2026 MyLMS. All Rights Reserved.
+    </p>
 
 </footer>
 
-<script src="script.js"></script>
 
 
-<!-- Login Modal -->
+<!-- =========================
+     LOGIN MODAL
+========================= -->
 
-<div id="loginModal" class="modal">
+<div
+    id="loginModal"
+    class="modal"
+>
 
-<div class="modal-content">
 
-<span id="closeModal">&times;</span>
+    <div class="modal-content">
 
-<h2>Login</h2>
 
-<input type="text" placeholder="Username">
+        <span id="closeModal">
+            &times;
+        </span>
 
-<input type="password" placeholder="Password">
 
-<button>Login</button>
+        <h2>
+            Login
+        </h2>
 
-<p>
 
-Don't have an account?
+        <input
+            type="email"
+            id="loginEmail"
+            placeholder="Email Address"
+        >
 
-<a href="#" id="registerLink">
 
-Register
+        <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+        >
 
-</a>
 
-</p>
+        <button id="loginSubmit">
+
+            Login
+
+        </button>
+
+
+        <p>
+
+            Don't have an account?
+
+            <a
+                href="#"
+                id="registerLink"
+            >
+                Register
+            </a>
+
+        </p>
+
+
+    </div>
 
 </div>
 
-</div>
+
 
 <!-- =========================
      REGISTER MODAL
 ========================= -->
 
-<div id="registerModal" class="modal">
+<div
+    id="registerModal"
+    class="modal"
+>
+
 
     <div class="modal-content">
 
-        <span id="closeRegister">&times;</span>
 
-        <h2>Create Account</h2>
+        <span id="closeRegister">
+            &times;
+        </span>
+
+
+        <h2>
+            Create Account
+        </h2>
+
 
         <input
             type="text"
@@ -280,11 +411,16 @@ Register
             placeholder="Full Name"
         >
 
+
         <input
             type="email"
             id="registerEmail"
             placeholder="Email Address"
         >
+
+
+
+        <!-- PASSWORD -->
 
         <div class="password-box">
 
@@ -303,6 +439,10 @@ Register
 
         </div>
 
+
+
+        <!-- CONFIRM PASSWORD -->
+
         <div class="password-box">
 
             <input
@@ -320,6 +460,10 @@ Register
 
         </div>
 
+
+
+        <!-- REMEMBER -->
+
         <label class="remember">
 
             <input
@@ -331,27 +475,60 @@ Register
 
         </label>
 
+
+
         <button id="registerSubmit">
+
             Create Account
+
         </button>
 
+
+
+        <!-- FORGOT PASSWORD -->
+
         <p class="forgot">
-            <a href="#" id="forgotPassword">
+
+            <a
+                href="#"
+                id="forgotPassword"
+            >
                 Forgot Password?
             </a>
+
         </p>
+
+
+
+        <!-- BACK TO LOGIN -->
 
         <p>
+
             Already have an account?
 
-            <a href="#" id="backToLogin">
+            <a
+                href="#"
+                id="backToLogin"
+            >
                 Login
             </a>
+
         </p>
+
 
     </div>
 
 </div>
 
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
