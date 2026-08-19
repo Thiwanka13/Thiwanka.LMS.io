@@ -488,3 +488,87 @@ if (forgotPassword) {
     });
 
 }
+
+
+// ========================================
+// LOGIN SYSTEM - DEMO
+// ========================================
+
+const loginSubmit =
+    document.getElementById("loginSubmit");
+
+const loginEmail =
+    document.getElementById("loginEmail");
+
+const loginPassword =
+    document.getElementById("loginPassword");
+
+
+if (loginSubmit) {
+
+    loginSubmit.addEventListener("click", function () {
+
+        const email = loginEmail.value.trim();
+        const password = loginPassword.value;
+
+
+        // Check empty fields
+
+        if (email === "" || password === "") {
+
+            alert("Please enter your email and password.");
+
+            return;
+
+        }
+
+
+        // DEMO LOGIN DETAILS
+
+        const demoEmail = "student@mylms.com";
+        const demoPassword = "123456";
+
+
+        // Check Login
+
+        if (
+            email === demoEmail &&
+            password === demoPassword
+        ) {
+
+            // Save login status
+
+            localStorage.setItem(
+                "isLoggedIn",
+                "true"
+            );
+
+            localStorage.setItem(
+                "studentEmail",
+                email
+            );
+
+
+            alert("Login successful!");
+
+
+            // Go to Dashboard
+
+            window.location.href =
+                "dashboard.html";
+
+
+        } else {
+
+            alert(
+                "Invalid email or password.\n\n" +
+                "Demo Login:\n" +
+                "Email: student@mylms.com\n" +
+                "Password: 123456"
+            );
+
+        }
+
+    });
+
+}
