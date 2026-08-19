@@ -407,3 +407,61 @@ background:#1e293b;
 color:white;
 
 }
+
+/* =========================
+   REGISTER MODAL
+========================= */
+
+.password-box{
+    position:relative;
+    width:100%;
+}
+
+.password-box input{
+    padding-right:45px;
+}
+
+.password-toggle{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:18px;
+}
+
+.remember{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:10px 0;
+    font-size:14px;
+}
+
+.remember input{
+    width:auto;
+}
+
+.forgot{
+    margin:15px 0;
+}
+
+.modal-content a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.modal-content a:hover{
+    text-decoration:underline;
+}
+
+body.dark .modal-content input{
+    background:#0f172a;
+    color:white;
+    border-color:#475569;
+}
+
+body.dark .modal-content input::placeholder{
+    color:#94a3b8;
+}
