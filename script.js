@@ -1,5 +1,5 @@
 // ========================================
-// MyLMS - MAIN JAVASCRIPT
+// MyLMS - HOME PAGE JAVASCRIPT
 // ========================================
 
 
@@ -63,23 +63,27 @@ if (savedTheme === "dark") {
     document.body.classList.add("dark");
 
     if (themeBtn) {
+
         themeBtn.innerHTML = "☀️";
+
     }
 
 }
 
 
 // ========================================
-// HERO - GET STARTED BUTTON
+// GET STARTED BUTTON
 // ========================================
 
-const heroBtn = document.getElementById("getStartedBtn");
+const heroBtn =
+    document.getElementById("getStartedBtn");
 
 if (heroBtn) {
 
     heroBtn.addEventListener("click", () => {
 
-        const courses = document.getElementById("courses");
+        const courses =
+            document.getElementById("courses");
 
         if (courses) {
 
@@ -121,6 +125,7 @@ courseButtons.forEach(button => {
 const animatedElements =
     document.querySelectorAll(".card, .feature");
 
+
 if ("IntersectionObserver" in window) {
 
     const observer =
@@ -135,7 +140,9 @@ if ("IntersectionObserver" in window) {
                     entry.target.style.transform =
                         "translateY(0)";
 
-                    observer.unobserve(entry.target);
+                    observer.unobserve(
+                        entry.target
+                    );
 
                 }
 
@@ -226,17 +233,22 @@ const backToLogin =
 
 if (registerLink && registerModal) {
 
-    registerLink.addEventListener("click", (event) => {
+    registerLink.addEventListener(
+        "click",
+        (event) => {
 
-        event.preventDefault();
+            event.preventDefault();
 
-        if (loginModal) {
-            loginModal.style.display = "none";
+            if (loginModal) {
+
+                loginModal.style.display = "none";
+
+            }
+
+            registerModal.style.display = "flex";
+
         }
-
-        registerModal.style.display = "flex";
-
-    });
+    );
 
 }
 
@@ -245,34 +257,44 @@ if (registerLink && registerModal) {
 
 if (closeRegister && registerModal) {
 
-    closeRegister.addEventListener("click", () => {
+    closeRegister.addEventListener(
+        "click",
+        () => {
 
-        registerModal.style.display = "none";
+            registerModal.style.display = "none";
 
-    });
+        }
+    );
 
 }
 
 
 /* REGISTER → LOGIN */
 
-if (backToLogin && registerModal && loginModal) {
+if (
+    backToLogin &&
+    registerModal &&
+    loginModal
+) {
 
-    backToLogin.addEventListener("click", (event) => {
+    backToLogin.addEventListener(
+        "click",
+        (event) => {
 
-        event.preventDefault();
+            event.preventDefault();
 
-        registerModal.style.display = "none";
+            registerModal.style.display = "none";
 
-        loginModal.style.display = "flex";
+            loginModal.style.display = "flex";
 
-    });
+        }
+    );
 
 }
 
 
 // ========================================
-// CLOSE MODALS BY CLICKING OUTSIDE
+// CLOSE MODALS OUTSIDE
 // ========================================
 
 window.addEventListener("click", (event) => {
@@ -304,65 +326,99 @@ window.addEventListener("click", (event) => {
 // ========================================
 
 const registerPassword =
-    document.getElementById("registerPassword");
+    document.getElementById(
+        "registerPassword"
+    );
 
 const togglePassword =
-    document.getElementById("togglePassword");
+    document.getElementById(
+        "togglePassword"
+    );
 
 
-if (registerPassword && togglePassword) {
+if (
+    registerPassword &&
+    togglePassword
+) {
 
-    togglePassword.addEventListener("click", () => {
+    togglePassword.addEventListener(
+        "click",
+        () => {
 
-        if (registerPassword.type === "password") {
+            if (
+                registerPassword.type ===
+                "password"
+            ) {
 
-            registerPassword.type = "text";
+                registerPassword.type =
+                    "text";
 
-            togglePassword.innerHTML = "🙈";
+                togglePassword.innerHTML =
+                    "🙈";
 
-        } else {
+            } else {
 
-            registerPassword.type = "password";
+                registerPassword.type =
+                    "password";
 
-            togglePassword.innerHTML = "👁️";
+                togglePassword.innerHTML =
+                    "👁️";
+
+            }
 
         }
-
-    });
+    );
 
 }
 
 
 // ========================================
-// CONFIRM PASSWORD SHOW / HIDE
+// CONFIRM PASSWORD
 // ========================================
 
 const confirmPassword =
-    document.getElementById("confirmPassword");
+    document.getElementById(
+        "confirmPassword"
+    );
 
 const toggleConfirmPassword =
-    document.getElementById("toggleConfirmPassword");
+    document.getElementById(
+        "toggleConfirmPassword"
+    );
 
 
-if (confirmPassword && toggleConfirmPassword) {
+if (
+    confirmPassword &&
+    toggleConfirmPassword
+) {
 
-    toggleConfirmPassword.addEventListener("click", () => {
+    toggleConfirmPassword.addEventListener(
+        "click",
+        () => {
 
-        if (confirmPassword.type === "password") {
+            if (
+                confirmPassword.type ===
+                "password"
+            ) {
 
-            confirmPassword.type = "text";
+                confirmPassword.type =
+                    "text";
 
-            toggleConfirmPassword.innerHTML = "🙈";
+                toggleConfirmPassword.innerHTML =
+                    "🙈";
 
-        } else {
+            } else {
 
-            confirmPassword.type = "password";
+                confirmPassword.type =
+                    "password";
 
-            toggleConfirmPassword.innerHTML = "👁️";
+                toggleConfirmPassword.innerHTML =
+                    "👁️";
+
+            }
 
         }
-
-    });
+    );
 
 }
 
@@ -372,97 +428,103 @@ if (confirmPassword && toggleConfirmPassword) {
 // ========================================
 
 const registerSubmit =
-    document.getElementById("registerSubmit");
+    document.getElementById(
+        "registerSubmit"
+    );
 
 
 if (registerSubmit) {
 
-    registerSubmit.addEventListener("click", () => {
+    registerSubmit.addEventListener(
+        "click",
+        () => {
 
-        const name =
-            document.getElementById("registerName").value.trim();
+            const name =
+                document.getElementById(
+                    "registerName"
+                ).value.trim();
 
-        const email =
-            document.getElementById("registerEmail").value.trim();
+            const email =
+                document.getElementById(
+                    "registerEmail"
+                ).value.trim();
 
-        const password =
-            document.getElementById("registerPassword").value;
+            const password =
+                document.getElementById(
+                    "registerPassword"
+                ).value;
 
-        const confirm =
-            document.getElementById("confirmPassword").value;
+            const confirm =
+                document.getElementById(
+                    "confirmPassword"
+                ).value;
 
 
-        // EMPTY FIELDS
+            if (
+                name === "" ||
+                email === "" ||
+                password === "" ||
+                confirm === ""
+            ) {
 
-        if (
-            name === "" ||
-            email === "" ||
-            password === "" ||
-            confirm === ""
-        ) {
+                alert(
+                    "Please fill in all fields."
+                );
+
+                return;
+
+            }
+
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+            if (
+                !emailPattern.test(email)
+            ) {
+
+                alert(
+                    "Please enter a valid email address."
+                );
+
+                return;
+
+            }
+
+
+            if (password.length < 6) {
+
+                alert(
+                    "Password must contain at least 6 characters."
+                );
+
+                return;
+
+            }
+
+
+            if (password !== confirm) {
+
+                alert(
+                    "Passwords do not match."
+                );
+
+                return;
+
+            }
+
 
             alert(
-                "Please fill in all fields."
+                "Registration successful!"
             );
 
-            return;
+
+            registerModal.style.display =
+                "none";
 
         }
-
-
-        // EMAIL VALIDATION
-
-        const emailPattern =
-            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-
-        if (!emailPattern.test(email)) {
-
-            alert(
-                "Please enter a valid email address."
-            );
-
-            return;
-
-        }
-
-
-        // PASSWORD LENGTH
-
-        if (password.length < 6) {
-
-            alert(
-                "Password must contain at least 6 characters."
-            );
-
-            return;
-
-        }
-
-
-        // PASSWORD MATCH
-
-        if (password !== confirm) {
-
-            alert(
-                "Passwords do not match."
-            );
-
-            return;
-
-        }
-
-
-        // SUCCESS
-
-        alert(
-            "Registration successful!"
-        );
-
-
-        registerModal.style.display = "none";
-
-    });
+    );
 
 }
 
@@ -472,149 +534,122 @@ if (registerSubmit) {
 // ========================================
 
 const forgotPassword =
-    document.getElementById("forgotPassword");
+    document.getElementById(
+        "forgotPassword"
+    );
 
 
 if (forgotPassword) {
 
-    forgotPassword.addEventListener("click", (event) => {
+    forgotPassword.addEventListener(
+        "click",
+        (event) => {
 
-        event.preventDefault();
+            event.preventDefault();
 
-        alert(
-            "Password recovery will be connected with PHP and MySQL later."
-        );
+            alert(
+                "Password recovery will be connected with PHP and MySQL later."
+            );
 
-    });
+        }
+    );
 
 }
 
 
 // ========================================
-// LOGIN SYSTEM - DEMO
+// DEMO LOGIN
 // ========================================
 
 const loginSubmit =
-    document.getElementById("loginSubmit");
+    document.getElementById(
+        "loginSubmit"
+    );
 
 const loginEmail =
-    document.getElementById("loginEmail");
+    document.getElementById(
+        "loginEmail"
+    );
 
 const loginPassword =
-    document.getElementById("loginPassword");
+    document.getElementById(
+        "loginPassword"
+    );
 
 
 if (loginSubmit) {
 
-    loginSubmit.addEventListener("click", function () {
+    loginSubmit.addEventListener(
+        "click",
+        () => {
 
-        const email = loginEmail.value.trim();
-        const password = loginPassword.value;
+            const email =
+                loginEmail.value.trim();
+
+            const password =
+                loginPassword.value;
 
 
-        // Check empty fields
+            if (
+                email === "" ||
+                password === ""
+            ) {
 
-        if (email === "" || password === "") {
+                alert(
+                    "Please enter your email and password."
+                );
 
-            alert("Please enter your email and password.");
+                return;
 
-            return;
+            }
+
+
+            // DEMO LOGIN
+
+            const demoEmail =
+                "student@mylms.com";
+
+            const demoPassword =
+                "123456";
+
+
+            if (
+                email === demoEmail &&
+                password === demoPassword
+            ) {
+
+                localStorage.setItem(
+                    "isLoggedIn",
+                    "true"
+                );
+
+                localStorage.setItem(
+                    "studentEmail",
+                    email
+                );
+
+
+                alert(
+                    "Login successful!"
+                );
+
+
+                window.location.href =
+                    "dashboard.html";
+
+
+            } else {
+
+                alert(
+                    "Invalid email or password.\n\n" +
+                    "Demo Login:\n" +
+                    "Email: student@mylms.com\n" +
+                    "Password: 123456"
+                );
+
+            }
 
         }
-
-
-        // DEMO LOGIN DETAILS
-
-        const demoEmail = "student@mylms.com";
-        const demoPassword = "123456";
-
-
-        // Check Login
-
-        if (
-            email === demoEmail &&
-            password === demoPassword
-        ) {
-
-            // Save login status
-
-            localStorage.setItem(
-                "isLoggedIn",
-                "true"
-            );
-
-            localStorage.setItem(
-                "studentEmail",
-                email
-            );
-
-
-            alert("Login successful!");
-
-
-            // Go to Dashboard
-
-            window.location.href =
-                "dashboard.html";
-
-
-        } else {
-
-            alert(
-                "Invalid email or password.\n\n" +
-                "Demo Login:\n" +
-                "Email: student@mylms.com\n" +
-                "Password: 123456"
-            );
-
-        }
-
-    });
+    );
 
 }
-
-// ========================================
-// LOAD STUDENT EMAIL
-// ========================================
-
-const studentEmail =
-    localStorage.getItem("studentEmail");
-
-const emailElement =
-    document.getElementById("studentEmail");
-
-
-if (studentEmail && emailElement) {
-
-    emailElement.innerText = studentEmail;
-
-}
-
-// ========================================
-// LOGOUT
-// ========================================
-
-const logoutBtn =
-    document.getElementById("logoutBtn");
-
-
-if (logoutBtn) {
-
-    logoutBtn.addEventListener("click", function(e){
-
-        e.preventDefault();
-
-
-        localStorage.removeItem("isLoggedIn");
-
-        localStorage.removeItem("studentEmail");
-
-
-        window.location.href =
-            "index.html";
-
-    });
-
-}
-
-
