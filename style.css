@@ -981,41 +981,168 @@ body.dark .modal-content input::placeholder{
 
 
 
-/* DASHBOARD DARK MODE */
+/* ========================================
+   DASHBOARD DARK MODE
+======================================== */
 
-body.dark.dashboard-body{
-    background:#0f172a;
+body.dark.dashboard-body {
+    background: #0f172a;
+    color: #ffffff;
 }
 
 
-body.dark .stat-card,
-body.dark .learning-card,
-body.dark .recommended-card,
+/* Dashboard main */
+
+body.dark .dashboard-main {
+    background: #0f172a;
+}
+
+
+/* Topbar */
+
+body.dark .dashboard-topbar h1 {
+    color: #ffffff;
+}
+
+body.dark .dashboard-topbar p {
+    color: #94a3b8;
+}
+
+
+/* Theme + Notification buttons */
+
 body.dark .dashboard-actions button,
-body.dark .notification{
-    background:#1e293b;
-
-    color:white;
+body.dark .notification {
+    background: #1e293b;
+    color: #ffffff;
+    border: 1px solid #334155;
 }
 
 
-body.dark .dashboard-topbar p,
-body.dark .stat-card p,
-body.dark .learning-info p,
-body.dark .recommended-card p{
-    color:#94a3b8;
+/* Statistics Cards */
+
+body.dark .stat-card {
+    background: #1e293b;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
 }
 
 
-body.dark .stat-icon{
-    background:#334155;
+/* Statistics text */
+
+body.dark .stat-card h2 {
+    color: #ffffff;
+}
+
+body.dark .stat-card p {
+    color: #94a3b8;
 }
 
 
-body.dark .progress{
-    background:#334155;
+/* Stat Icons */
+
+body.dark .stat-icon {
+    background: #334155;
 }
 
+
+/* Section headings */
+
+body.dark .section-heading h2 {
+    color: #ffffff;
+}
+
+body.dark .section-heading a {
+    color: #60a5fa;
+}
+
+
+/* Continue Learning Cards */
+
+body.dark .learning-card {
+    background: #1e293b;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+}
+
+
+/* Learning text */
+
+body.dark .learning-info span {
+    color: #60a5fa;
+}
+
+body.dark .learning-info h3 {
+    color: #ffffff;
+}
+
+body.dark .learning-info p {
+    color: #94a3b8;
+}
+
+
+/* Progress background */
+
+body.dark .progress {
+    background: #334155;
+}
+
+
+/* Progress bar */
+
+body.dark .progress-bar {
+    background: #3b82f6;
+}
+
+
+/* Recommended Cards */
+
+body.dark .recommended-card {
+    background: #1e293b;
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+}
+
+
+/* Recommended text */
+
+body.dark .recommended-card span {
+    color: #60a5fa;
+}
+
+body.dark .recommended-card h3 {
+    color: #ffffff;
+}
+
+body.dark .recommended-card p {
+    color: #94a3b8;
+}
+
+
+/* Sidebar */
+
+body.dark .sidebar {
+    background: #1d4ed8;
+}
+
+
+/* Sidebar active / hover */
+
+body.dark .sidebar-nav a:hover,
+body.dark .sidebar-nav a.active {
+    background: rgba(255,255,255,.18);
+}
+
+
+/* Certificate */
+
+body.dark .certificate-box {
+    background: linear-gradient(
+        135deg,
+        #1d4ed8,
+        #0891b2
+    );
+}
 
 
 /* RESPONSIVE DASHBOARD */
