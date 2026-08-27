@@ -480,49 +480,7 @@
 </main>
 
 
-<script>
-
-
-// Dashboard Dark Mode
-
-const dashboardTheme =
-    document.getElementById("dashboardTheme");
-
-
-dashboardTheme.addEventListener("click", function(){
-
-    document.body.classList.toggle("dark");
-
-    if(document.body.classList.contains("dark")){
-
-        dashboardTheme.innerHTML = "☀️";
-
-        localStorage.setItem("theme","dark");
-
-    }else{
-
-        dashboardTheme.innerHTML = "🌙";
-
-        localStorage.setItem("theme","light");
-
-    }
-
-});
-
-
-// Load Theme
-
-if(localStorage.getItem("theme") === "dark"){
-
-    document.body.classList.add("dark");
-
-    dashboardTheme.innerHTML = "☀️";
-
-}
-
-</script>
-
+<script src="dashboard.js"></script>
 
 </body>
-
 </html>
