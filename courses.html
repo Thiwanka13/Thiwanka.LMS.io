@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MyLMS - My Courses</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body class="dashboard-body">
+
+
+<!-- =========================
+     SIDEBAR
+========================= -->
+
+<aside class="sidebar">
+
+    <div class="dashboard-logo">
+        MyLMS
+    </div>
+
+
+    <!-- STUDENT PROFILE -->
+
+    <div class="student-profile">
+
+        <div class="profile-avatar">
+            👨‍🎓
+        </div>
+
+        <h3>
+            Student
+        </h3>
+
+        <p id="studentEmail">
+            student@mylms.com
+        </p>
+
+    </div>
+
+
+    <!-- SIDEBAR NAVIGATION -->
+
+    <nav class="sidebar-nav">
+
+        <a href="dashboard.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="courses.html" class="active">
+            📚 My Courses
+        </a>
+
+        <a href="#">
+            ❤️ Wishlist
+        </a>
+
+        <a href="#">
+            📝 My Quizzes
+        </a>
+
+        <a href="#">
+            🏆 Certificates
+        </a>
+
+        <a href="#">
+            ⚙️ Settings
+        </a>
+
+        <a href="#" id="logoutBtn">
+            🚪 Logout
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+
+<main class="dashboard-main">
+
+
+    <!-- =========================
+         TOP BAR
+    ========================= -->
+
+    <div class="dashboard-topbar">
+
+        <div>
+
+            <h1>
+                My Courses 📚
+            </h1>
+
+            <p>
+                Manage and continue your learning journey.
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-actions">
+
+            <button id="dashboardTheme">
+                🌙
+            </button>
+
+            <div class="notification">
+                🔔
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         COURSE SEARCH
+    ========================= -->
+
+    <div class="courses-search">
+
+        <input
+            type="text"
+            id="courseSearch"
+            placeholder="Search courses..."
+        >
+
+    </div>
+
+
+
+    <!-- =========================
+         COURSE FILTERS
+    ========================= -->
+
+    <div class="course-filters">
+
+        <button class="filter-btn active">
+            All Courses
+        </button>
+
+        <button class="filter-btn">
+            In Progress
+        </button>
+
+        <button class="filter-btn">
+            Completed
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         COURSES GRID
+    ========================= -->
+
+    <section class="course-grid">
+
+
+        <!-- =====================
+             COURSE 1
+        ====================== -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                💻
+            </div>
+
+
+            <div class="course-content">
+
+                <span class="course-category">
+                    Web Development
+                </span>
+
+                <h3>
+                    Complete HTML & CSS
+                </h3>
+
+                <p>
+                    Learn HTML and CSS from beginner
+                    to advanced level and build modern
+                    websites.
+                </p>
+
+
+                <!-- Progress -->
+
+                <div class="progress-area">
+
+                    <div class="progress-info">
+
+                        <span>
+                            Progress
+                        </span>
+
+                        <span>
+                            65%
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress"
+                            style="width:65%;"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="course-details">
+
+                    <span>
+                        📖 20 Lessons
+                    </span>
+
+                    <span>
+                        ⏱️ 8 Hours
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="continue-btn"
+                    onclick="openCourse('html-css')"
+                >
+                    Continue Learning
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================
+             COURSE 2
+        ====================== -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                🐍
+            </div>
+
+
+            <div class="course-content">
+
+                <span class="course-category">
+                    Programming
+                </span>
+
+                <h3>
+                    Python Programming
+                </h3>
+
+                <p>
+                    Learn Python programming from
+                    basics to advanced concepts.
+                </p>
+
+
+                <!-- Progress -->
+
+                <div class="progress-area">
+
+                    <div class="progress-info">
+
+                        <span>
+                            Progress
+                        </span>
+
+                        <span>
+                            40%
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress"
+                            style="width:40%;"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="course-details">
+
+                    <span>
+                        📖 15 Lessons
+                    </span>
+
+                    <span>
+                        ⏱️ 10 Hours
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="continue-btn"
+                    onclick="openCourse('python')"
+                >
+                    Continue Learning
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================
+             COURSE 3
+        ====================== -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                📊
+            </div>
+
+
+            <div class="course-content">
+
+                <span class="course-category">
+                    Data Science
+                </span>
+
+                <h3>
+                    Data Science Fundamentals
+                </h3>
+
+                <p>
+                    Learn Python, statistics, data
+                    analysis and visualization.
+                </p>
+
+
+                <!-- Progress -->
+
+                <div class="progress-area">
+
+                    <div class="progress-info">
+
+                        <span>
+                            Progress
+                        </span>
+
+                        <span>
+                            25%
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress"
+                            style="width:25%;"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="course-details">
+
+                    <span>
+                        📖 25 Lessons
+                    </span>
+
+                    <span>
+                        ⏱️ 15 Hours
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="continue-btn"
+                    onclick="openCourse('data-science')"
+                >
+                    Continue Learning
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================
+             COURSE 4
+        ====================== -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                🤖
+            </div>
+
+
+            <div class="course-content">
+
+                <span class="course-category">
+                    Artificial Intelligence
+                </span>
+
+                <h3>
+                    Machine Learning & AI
+                </h3>
+
+                <p>
+                    Explore machine learning algorithms,
+                    neural networks and artificial intelligence.
+                </p>
+
+
+                <!-- Progress -->
+
+                <div class="progress-area">
+
+                    <div class="progress-info">
+
+                        <span>
+                            Progress
+                        </span>
+
+                        <span>
+                            0%
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress"
+                            style="width:0%;"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="course-details">
+
+                    <span>
+                        📖 30 Lessons
+                    </span>
+
+                    <span>
+                        ⏱️ 20 Hours
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="continue-btn"
+                    onclick="openCourse('machine-learning')"
+                >
+                    Start Course
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================
+             COURSE 5
+        ====================== -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                ⚡
+            </div>
+
+
+            <div class="course-content">
+
+                <span class="course-category">
+                    Web Development
+                </span>
+
+                <h3>
+                    JavaScript Masterclass
+                </h3>
+
+                <p>
+                    Master JavaScript and build
+                    interactive web applications.
+                </p>
+
+
+                <!-- Progress -->
+
+                <div class="progress-area">
+
+                    <div class="progress-info">
+
+                        <span>
+                            Progress
+                        </span>
+
+                        <span>
+                            0%
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress"
+                            style="width:0%;"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="course-details">
+
+                    <span>
+                        📖 30 Lessons
+                    </span>
+
+                    <span>
+                        ⏱️ 18 Hours
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="continue-btn"
+                    onclick="openCourse('javascript')"
+                >
+                    Start Course
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================
+             COURSE 6
+        ====================== -->
+
+        <div class="course-card">
+
+            <div class="course-icon">
+                🗄️
+            </div>
+
+
+            <div class="course-content">
+
+                <span class="course-category">
+                    Database
+                </span>
+
+                <h3>
+                    MySQL Database
+                </h3>
+
+                <p>
+                    Learn SQL, database design,
+                    queries and MySQL fundamentals.
+                </p>
+
+
+                <!-- Progress -->
+
+                <div class="progress-area">
+
+                    <div class="progress-info">
+
+                        <span>
+                            Progress
+                        </span>
+
+                        <span>
+                            0%
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress"
+                            style="width:0%;"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="course-details">
+
+                    <span>
+                        📖 22 Lessons
+                    </span>
+
+                    <span>
+                        ⏱️ 12 Hours
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="continue-btn"
+                    onclick="openCourse('mysql')"
+                >
+                    Start Course
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="dashboard.js"></script>
+
+
+<script>
+
+function openCourse(course) {
+
+    /*
+       Step 10 වලදී අපි
+       Course Lessons page එක
+       හදනවා.
+
+       දැනට test කිරීම සඳහා
+       alert එකක් පෙන්වයි.
+    */
+
+    alert(
+        "Course selected: " + course
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
