@@ -13,61 +13,84 @@ const isLoggedIn =
 
 if (isLoggedIn !== "true") {
 
-    window.location.href =
-        "index.html";
+    window.location.href = "index.html";
 
 }
 
 
 // ========================================
-// DASHBOARD THEME
+// DASHBOARD DARK / LIGHT MODE
 // ========================================
 
 const dashboardTheme =
-    document.getElementById(
-        "dashboardTheme"
-    );
+    document.getElementById("dashboardTheme");
 
+
+function loadDashboardTheme() {
+
+    const savedTheme =
+        localStorage.getItem("theme");
+
+
+    if (savedTheme === "dark") {
+
+        document.body.classList.add("dark");
+
+        if (dashboardTheme) {
+
+            dashboardTheme.innerHTML = "☀️";
+
+        }
+
+    } else {
+
+        document.body.classList.remove("dark");
+
+        if (dashboardTheme) {
+
+            dashboardTheme.innerHTML = "🌙";
+
+        }
+
+    }
+
+}
+
+
+// ========================================
+// THEME BUTTON
+// ========================================
 
 if (dashboardTheme) {
 
-    dashboardTheme.addEventListener(
-        "click",
-        () => {
+    dashboardTheme.addEventListener("click", function () {
 
-            document.body.classList.toggle(
+        document.body.classList.toggle("dark");
+
+
+        if (
+            document.body.classList.contains("dark")
+        ) {
+
+            dashboardTheme.innerHTML = "☀️";
+
+            localStorage.setItem(
+                "theme",
                 "dark"
             );
 
+        } else {
 
-            if (
-                document.body.classList.contains(
-                    "dark"
-                )
-            ) {
+            dashboardTheme.innerHTML = "🌙";
 
-                dashboardTheme.innerHTML =
-                    "☀️";
-
-                localStorage.setItem(
-                    "theme",
-                    "dark"
-                );
-
-            } else {
-
-                dashboardTheme.innerHTML =
-                    "🌙";
-
-                localStorage.setItem(
-                    "theme",
-                    "light"
-                );
-
-            }
+            localStorage.setItem(
+                "theme",
+                "light"
+            );
 
         }
-    );
+
+    });
 
 }
 
@@ -76,25 +99,7 @@ if (dashboardTheme) {
 // LOAD SAVED THEME
 // ========================================
 
-const savedTheme =
-    localStorage.getItem("theme");
-
-
-if (savedTheme === "dark") {
-
-    document.body.classList.add(
-        "dark"
-    );
-
-
-    if (dashboardTheme) {
-
-        dashboardTheme.innerHTML =
-            "☀️";
-
-    }
-
-}
+loadDashboardTheme();
 
 
 // ========================================
@@ -102,15 +107,11 @@ if (savedTheme === "dark") {
 // ========================================
 
 const studentEmail =
-    localStorage.getItem(
-        "studentEmail"
-    );
+    localStorage.getItem("studentEmail");
 
 
 const emailElement =
-    document.getElementById(
-        "studentEmail"
-    );
+    document.getElementById("studentEmail");
 
 
 if (
@@ -129,48 +130,32 @@ if (
 // ========================================
 
 const logoutBtn =
-    document.getElementById(
-        "logoutBtn"
-    );
+    document.getElementById("logoutBtn");
 
 
 if (logoutBtn) {
 
-    logoutBtn.addEventListener(
-        "click",
-        (event) => {
+    logoutBtn.addEventListener("click", function (event) {
 
-            event.preventDefault();
+        event.preventDefault();
 
 
-            localStorage.removeItem(
-                "isLoggedIn"
-            );
+        // Remove login information
 
-            localStorage.removeItem(
-                "studentEmail"
-            );
+        localStorage.removeItem(
+            "isLoggedIn"
+        );
 
-
-            window.location.href =
-                "index.html";
-
-        }
-    );
-
-}
-
-// ========================================
-// CHECK LOGIN
-// ========================================
-
-const isLoggedIn =
-    localStorage.getItem("isLoggedIn");
+        localStorage.removeItem(
+            "studentEmail"
+        );
 
 
-if (isLoggedIn !== "true") {
+        // Go back to Home
 
-    window.location.href =
-        "index.html";
+        window.location.href =
+            "index.html";
+
+    });
 
 }
