@@ -589,3 +589,32 @@ if (studentEmail && emailElement) {
     emailElement.innerText = studentEmail;
 
 }
+
+// ========================================
+// LOGOUT
+// ========================================
+
+const logoutBtn =
+    document.getElementById("logoutBtn");
+
+
+if (logoutBtn) {
+
+    logoutBtn.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+
+        localStorage.removeItem("isLoggedIn");
+
+        localStorage.removeItem("studentEmail");
+
+
+        window.location.href =
+            "index.html";
+
+    });
+
+}
+
+
