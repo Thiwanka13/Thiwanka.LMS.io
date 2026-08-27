@@ -572,3 +572,20 @@ if (loginSubmit) {
     });
 
 }
+
+// ========================================
+// LOAD STUDENT EMAIL
+// ========================================
+
+const studentEmail =
+    localStorage.getItem("studentEmail");
+
+const emailElement =
+    document.getElementById("studentEmail");
+
+
+if (studentEmail && emailElement) {
+
+    emailElement.innerText = studentEmail;
+
+}
