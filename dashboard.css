@@ -827,17 +827,80 @@
 }
 
 /* ========================================
-   MY COURSES - DARK MODE BOX BACKGROUNDS
+   DARK MODE - ALL LMS BOXES
 ======================================== */
 
 body.dark .course-overview,
-body.dark .course-progress-box,
-body.dark .lesson-module {
+body.dark .lesson-module,
+body.dark .lesson-progress-box,
+body.dark .lesson-content-section,
+body.dark .lesson-complete-box {
     background: #1e293b;
     color: #ffffff;
 }
 
+
+/* Lesson Items */
+
 body.dark .lesson-item {
     background: #334155;
     color: #ffffff;
+}
+
+
+/* Current Lesson */
+
+body.dark .lesson-item.current {
+    background: #273449;
+}
+
+
+/* Module Header Border */
+
+body.dark .module-header {
+    border-bottom-color: #475569;
+}
+
+
+/* Lesson Item Border */
+
+body.dark .lesson-item {
+    border-bottom-color: #475569;
+}
+
+
+/* Progress Bars */
+
+body.dark .course-progress-box .progress-bar,
+body.dark .lesson-progress-bar {
+    background: #475569;
+}
+
+
+/* Back / Previous Buttons */
+
+body.dark .back-btn,
+body.dark .previous-btn {
+    background: #334155;
+    color: #ffffff;
+}
+
+
+/* Lesson Content Text */
+
+body.dark .lesson-content p,
+body.dark .lesson-list {
+    color: #cbd5e1;
+}
+
+
+/* Small Description Text */
+
+body.dark .course-overview-info p,
+body.dark .course-progress-box p,
+body.dark .module-header p,
+body.dark .lesson-info p,
+body.dark .lesson-complete-box p,
+body.dark .section-header p {
+    color: #cbd5e1;
 }
