@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MyLMS - Lesson</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body class="dashboard-body">
+
+
+<!-- =========================
+     SIDEBAR
+========================= -->
+
+<aside class="sidebar">
+
+    <div class="dashboard-logo">
+        MyLMS
+    </div>
+
+
+    <div class="student-profile">
+
+        <div class="profile-avatar">
+            👨‍🎓
+        </div>
+
+        <h3>
+            Student
+        </h3>
+
+        <p id="studentEmail">
+            student@mylms.com
+        </p>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <a href="dashboard.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="courses.html" class="active">
+            📚 My Courses
+        </a>
+
+        <a href="#">
+            ❤️ Wishlist
+        </a>
+
+        <a href="#">
+            📝 My Quizzes
+        </a>
+
+        <a href="#">
+            🏆 Certificates
+        </a>
+
+        <a href="#">
+            ⚙️ Settings
+        </a>
+
+        <a href="#" id="logoutBtn">
+            🚪 Logout
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================= -->
+
+<main class="dashboard-main">
+
+
+    <!-- =========================
+         TOP BAR
+    ========================= -->
+
+    <div class="dashboard-topbar">
+
+        <div>
+
+            <h1>
+                Introduction to HTML 💻
+            </h1>
+
+            <p>
+                Complete HTML & CSS
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-actions">
+
+            <button id="dashboardTheme">
+                🌙
+            </button>
+
+            <div class="notification">
+                🔔
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         LESSON PROGRESS
+    ========================= -->
+
+    <div class="lesson-progress-box">
+
+        <div class="lesson-progress-info">
+
+            <span>
+                Course Progress
+            </span>
+
+            <strong>
+                65%
+            </strong>
+
+        </div>
+
+
+        <div class="lesson-progress-bar">
+
+            <div
+                class="lesson-progress-fill"
+                style="width:65%;"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         VIDEO
+    ========================= -->
+
+    <section class="lesson-video-section">
+
+        <div class="video-container">
+
+            <div class="video-placeholder">
+
+                <div class="play-icon">
+                    ▶
+                </div>
+
+                <h3>
+                    Introduction to HTML
+                </h3>
+
+                <p>
+                    Lesson Video • 12:35
+                </p>
+
+                <button
+                    class="video-play-btn"
+                    onclick="playLessonVideo()"
+                >
+                    ▶ Play Lesson
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         LESSON CONTENT
+    ========================= -->
+
+    <section class="lesson-content-section">
+
+
+        <div class="lesson-content">
+
+
+            <span class="course-category">
+                Module 01 • Lesson 01
+            </span>
+
+
+            <h2>
+                Introduction to HTML
+            </h2>
+
+
+            <p>
+                HTML stands for HyperText Markup Language.
+                It is the standard language used to create
+                and structure content on websites.
+            </p>
+
+
+            <h3>
+                What is HTML?
+            </h3>
+
+
+            <p>
+                HTML provides the basic structure of a webpage.
+                It allows us to create headings, paragraphs,
+                images, links, lists, tables and many other
+                elements.
+            </p>
+
+
+            <h3>
+                Basic HTML Structure
+            </h3>
+
+
+            <p>
+                Every HTML document normally starts with a
+                document declaration followed by the HTML
+                structure.
+            </p>
+
+
+            <!-- CODE EXAMPLE -->
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;title&gt;
+        My First Website
+    &lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;
+        Hello World!
+    &lt;/h1&gt;
+
+    &lt;p&gt;
+        Welcome to my website.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+
+            <h3>
+                Important HTML Elements
+            </h3>
+
+
+            <ul class="lesson-list">
+
+                <li>
+                    <strong>&lt;h1&gt;</strong>
+                    — Creates a heading.
+                </li>
+
+                <li>
+                    <strong>&lt;p&gt;</strong>
+                    — Creates a paragraph.
+                </li>
+
+                <li>
+                    <strong>&lt;a&gt;</strong>
+                    — Creates a hyperlink.
+                </li>
+
+                <li>
+                    <strong>&lt;img&gt;</strong>
+                    — Adds an image.
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         COMPLETE LESSON
+    ========================= -->
+
+    <section class="lesson-complete-box">
+
+        <div>
+
+            <h3>
+                🎯 Finish this lesson
+            </h3>
+
+            <p>
+                Mark this lesson as completed
+                when you finish learning.
+            </p>
+
+        </div>
+
+
+        <button
+            id="completeLessonBtn"
+            onclick="completeLesson()"
+        >
+            ✓ Mark as Complete
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <div class="lesson-navigation">
+
+        <button
+            class="previous-btn"
+            onclick="previousLesson()"
+        >
+            ← Previous Lesson
+        </button>
+
+
+        <button
+            class="next-btn"
+            onclick="nextLesson()"
+        >
+            Next Lesson →
+        </button>
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="dashboard.js"></script>
+
+
+<script>
+
+
+/* =========================
+   PLAY VIDEO
+========================= */
+
+function playLessonVideo() {
+
+    alert(
+        "Lesson video will be connected in the next step."
+    );
+
+}
+
+
+
+/* =========================
+   COMPLETE LESSON
+========================= */
+
+function completeLesson() {
+
+    const button =
+        document.getElementById(
+            "completeLessonBtn"
+        );
+
+
+    button.innerHTML =
+        "✓ Lesson Completed";
+
+
+    button.classList.add(
+        "completed-button"
+    );
+
+
+    localStorage.setItem(
+        "lesson1Completed",
+        "true"
+    );
+
+
+    alert(
+        "Congratulations! Lesson completed."
+    );
+
+}
+
+
+
+/* =========================
+   PREVIOUS LESSON
+========================= */
+
+function previousLesson() {
+
+    window.location.href =
+        "lessons.html";
+
+}
+
+
+
+/* =========================
+   NEXT LESSON
+========================= */
+
+function nextLesson() {
+
+    alert(
+        "Next lesson will be available soon."
+    );
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
