@@ -1,3 +1,4 @@
+```css
 /* ============================= */
 /* COURSES SECTION */
 /* ============================= */
@@ -20,7 +21,9 @@
 }
 
 
-/* Course Grid */
+/* ============================= */
+/* COURSE GRID */
+/* ============================= */
 
 .course-grid {
     display: grid;
@@ -29,7 +32,9 @@
 }
 
 
-/* Course Card */
+/* ============================= */
+/* COURSE CARD */
+/* ============================= */
 
 .course-card {
     background: white;
@@ -78,7 +83,9 @@
 }
 
 
-/* Progress */
+/* ============================= */
+/* PROGRESS */
+/* ============================= */
 
 .progress-area {
     margin-bottom: 18px;
@@ -113,7 +120,9 @@
 }
 
 
-/* Button */
+/* ============================= */
+/* CONTINUE BUTTON */
+/* ============================= */
 
 .continue-btn {
     width: 100%;
@@ -139,21 +148,29 @@
     background: #4f46e5;
 }
 
+
 /* ========================================
    STEP 11 - LESSONS PAGE
 ======================================== */
 
 
-/* Course Overview */
+/* ============================= */
+/* COURSE OVERVIEW */
+/* ============================= */
 
 .course-overview {
     background: white;
+
     border-radius: 16px;
+
     padding: 25px;
+
     margin-bottom: 30px;
 
     display: flex;
+
     justify-content: space-between;
+
     gap: 30px;
 
     box-shadow: 0 5px 20px rgba(0,0,0,0.06);
@@ -179,7 +196,9 @@
 }
 
 
-/* Course Progress */
+/* ============================= */
+/* COURSE PROGRESS */
+/* ============================= */
 
 .course-progress-box {
     width: 300px;
@@ -187,31 +206,42 @@
 
 .course-progress-box .progress-info {
     display: flex;
+
     justify-content: space-between;
+
     margin-bottom: 8px;
 }
 
 .course-progress-box .progress-bar {
     height: 9px;
+
     background: #e2e8f0;
+
     border-radius: 10px;
+
     overflow: hidden;
 }
 
 .course-progress-box .progress {
     height: 100%;
+
     background: #6366f1;
+
     border-radius: 10px;
 }
 
 .course-progress-box p {
     font-size: 13px;
+
     color: #64748b;
+
     margin-top: 8px;
 }
 
 
-/* Lessons Section */
+/* ============================= */
+/* LESSONS SECTION */
+/* ============================= */
 
 .lessons-section {
     margin-top: 20px;
@@ -230,11 +260,15 @@
 }
 
 
-/* Lesson Module */
+/* ============================= */
+/* LESSON MODULE */
+/* ============================= */
 
 .lesson-module {
     background: white;
+
     border-radius: 15px;
+
     margin-bottom: 20px;
 
     overflow: hidden;
@@ -243,13 +277,17 @@
 }
 
 
-/* Module Header */
+/* ============================= */
+/* MODULE HEADER */
+/* ============================= */
 
 .module-header {
     padding: 20px;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
     border-bottom: 1px solid #e2e8f0;
@@ -257,24 +295,30 @@
 
 .module-header h3 {
     font-size: 18px;
+
     margin-bottom: 5px;
 }
 
 .module-header p {
     color: #64748b;
+
     font-size: 13px;
 }
 
 .module-header > span {
     font-size: 13px;
+
     font-weight: 600;
 }
 
 
-/* Lesson Item */
+/* ============================= */
+/* LESSON ITEM */
+/* ============================= */
 
 .lesson-item {
     display: flex;
+
     align-items: center;
 
     gap: 15px;
@@ -289,14 +333,19 @@
 }
 
 
-/* Lesson Number */
+/* ============================= */
+/* LESSON NUMBER */
+/* ============================= */
 
 .lesson-number {
     width: 42px;
+
     height: 42px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-radius: 10px;
@@ -307,7 +356,9 @@
 }
 
 
-/* Lesson Information */
+/* ============================= */
+/* LESSON INFORMATION */
+/* ============================= */
 
 .lesson-info {
     flex: 1;
@@ -315,37 +366,47 @@
 
 .lesson-info h4 {
     font-size: 16px;
+
     margin-bottom: 5px;
 }
 
 .lesson-info p {
     font-size: 13px;
+
     color: #64748b;
 }
 
 
-/* Lesson Status */
+/* ============================= */
+/* LESSON STATUS */
+/* ============================= */
 
 .lesson-status {
     font-size: 18px;
 }
 
 
-/* Current Lesson */
+/* ============================= */
+/* CURRENT LESSON */
+/* ============================= */
 
 .lesson-item.current {
     background: #f8fafc;
 }
 
 
-/* Locked Lesson */
+/* ============================= */
+/* LOCKED LESSON */
+/* ============================= */
 
 .lesson-item.locked {
     opacity: 0.6;
 }
 
 
-/* Lesson Button */
+/* ============================= */
+/* LESSON BUTTON */
+/* ============================= */
 
 .lesson-btn {
     border: none;
@@ -370,10 +431,13 @@
 }
 
 
-/* Back Button */
+/* ============================= */
+/* BACK BUTTON */
+/* ============================= */
 
 .back-button-container {
     margin-top: 25px;
+
     margin-bottom: 30px;
 }
 
@@ -430,7 +494,9 @@
 ======================================== */
 
 
-/* Lesson Progress */
+/* ============================= */
+/* LESSON PROGRESS */
+/* ============================= */
 
 .lesson-progress-box {
     background: white;
@@ -444,7 +510,6 @@
     box-shadow: 0 5px 20px rgba(0,0,0,0.06);
 }
 
-
 .lesson-progress-info {
     display: flex;
 
@@ -452,7 +517,6 @@
 
     margin-bottom: 10px;
 }
-
 
 .lesson-progress-bar {
     width: 100%;
@@ -466,7 +530,6 @@
     overflow: hidden;
 }
 
-
 .lesson-progress-fill {
     height: 100%;
 
@@ -476,15 +539,13 @@
 }
 
 
-
-/* =========================
-   VIDEO
-========================= */
+/* ============================= */
+/* VIDEO */
+/* ============================= */
 
 .lesson-video-section {
     margin-bottom: 25px;
 }
-
 
 .video-container {
     width: 100%;
@@ -497,7 +558,6 @@
 
     overflow: hidden;
 }
-
 
 .video-placeholder {
     min-height: 420px;
@@ -516,7 +576,6 @@
 
     padding: 30px;
 }
-
 
 .play-icon {
     width: 75px;
@@ -540,20 +599,17 @@
     cursor: pointer;
 }
 
-
 .video-placeholder h3 {
     font-size: 22px;
 
     margin-bottom: 5px;
 }
 
-
 .video-placeholder p {
     opacity: 0.7;
 
     margin-bottom: 20px;
 }
-
 
 .video-play-btn {
     border: none;
@@ -571,16 +627,14 @@
     cursor: pointer;
 }
 
-
 .video-play-btn:hover {
     background: #4f46e5;
 }
 
 
-
-/* =========================
-   LESSON CONTENT
-========================= */
+/* ============================= */
+/* LESSON CONTENT */
+/* ============================= */
 
 .lesson-content-section {
     background: white;
@@ -594,18 +648,15 @@
     box-shadow: 0 5px 20px rgba(0,0,0,0.06);
 }
 
-
 .lesson-content {
     max-width: 900px;
 }
-
 
 .lesson-content h2 {
     font-size: 28px;
 
     margin: 10px 0 20px;
 }
-
 
 .lesson-content h3 {
     font-size: 20px;
@@ -614,7 +665,6 @@
 
     margin-bottom: 10px;
 }
-
 
 .lesson-content p {
     color: #475569;
@@ -625,10 +675,9 @@
 }
 
 
-
-/* =========================
-   CODE EXAMPLE
-========================= */
+/* ============================= */
+/* CODE EXAMPLE */
+/* ============================= */
 
 .code-example {
     background: #0f172a;
@@ -644,7 +693,6 @@
     overflow-x: auto;
 }
 
-
 .code-example pre {
     font-family: Consolas, monospace;
 
@@ -656,10 +704,9 @@
 }
 
 
-
-/* =========================
-   LESSON LIST
-========================= */
+/* ============================= */
+/* LESSON LIST */
+/* ============================= */
 
 .lesson-list {
     padding-left: 25px;
@@ -670,10 +717,9 @@
 }
 
 
-
-/* =========================
-   COMPLETE BOX
-========================= */
+/* ============================= */
+/* COMPLETE BOX */
+/* ============================= */
 
 .lesson-complete-box {
     background: white;
@@ -695,18 +741,15 @@
     box-shadow: 0 5px 20px rgba(0,0,0,0.06);
 }
 
-
 .lesson-complete-box h3 {
     margin-bottom: 5px;
 }
-
 
 .lesson-complete-box p {
     color: #64748b;
 
     font-size: 14px;
 }
-
 
 .lesson-complete-box button {
     border: none;
@@ -724,21 +767,18 @@
     font-family: inherit;
 }
 
-
 .lesson-complete-box button:hover {
     background: #4f46e5;
 }
-
 
 .completed-button {
     background: #16a34a !important;
 }
 
 
-
-/* =========================
-   LESSON NAVIGATION
-========================= */
+/* ============================= */
+/* LESSON NAVIGATION */
+/* ============================= */
 
 .lesson-navigation {
     display: flex;
@@ -747,7 +787,6 @@
 
     margin-bottom: 30px;
 }
-
 
 .previous-btn,
 .next-btn {
@@ -764,13 +803,11 @@
     font-size: 14px;
 }
 
-
 .previous-btn {
     background: #e2e8f0;
 
     color: #334155;
 }
-
 
 .next-btn {
     background: #6366f1;
@@ -778,21 +815,18 @@
     color: white;
 }
 
-
 .previous-btn:hover {
     background: #cbd5e1;
 }
-
 
 .next-btn:hover {
     background: #4f46e5;
 }
 
 
-
-/* =========================
+/* ========================================
    RESPONSIVE
-========================= */
+======================================== */
 
 @media (max-width: 768px) {
 
@@ -801,11 +835,9 @@
         min-height: 300px;
     }
 
-
     .lesson-content-section {
         padding: 20px;
     }
-
 
     .lesson-complete-box {
         flex-direction: column;
@@ -813,11 +845,9 @@
         align-items: flex-start;
     }
 
-
     .lesson-navigation {
         gap: 10px;
     }
-
 
     .previous-btn,
     .next-btn {
@@ -826,25 +856,67 @@
 
 }
 
+
 /* ========================================
-   DARK MODE - ALL LMS BOXES
+   GLOBAL DARK MODE
+   ALL LMS BOXES
 ======================================== */
 
-body.dark .course-overview,
-body.dark .lesson-module,
-body.dark .lesson-progress-box,
-body.dark .lesson-content-section,
-body.dark .lesson-complete-box {
+
+/* ============================= */
+/* COURSE CARDS */
+/* ============================= */
+
+body.dark .course-card {
     background: #1e293b;
+
+    color: #ffffff;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
+
+
+/* ============================= */
+/* COURSE OVERVIEW */
+/* ============================= */
+
+body.dark .course-overview {
+    background: #1e293b;
+
     color: #ffffff;
 }
 
 
-/* Lesson Items */
+/* ============================= */
+/* COURSE PROGRESS */
+/* ============================= */
+
+body.dark .course-progress-box {
+    color: #ffffff;
+}
+
+
+/* ============================= */
+/* LESSON MODULES */
+/* ============================= */
+
+body.dark .lesson-module {
+    background: #1e293b;
+
+    color: #ffffff;
+}
+
+
+/* ============================= */
+/* LESSON ITEMS */
+/* ============================= */
 
 body.dark .lesson-item {
     background: #334155;
+
     color: #ffffff;
+
+    border-bottom-color: #475569;
 }
 
 
@@ -855,52 +927,191 @@ body.dark .lesson-item.current {
 }
 
 
-/* Module Header Border */
+/* ============================= */
+/* LESSON PROGRESS BOX */
+/* ============================= */
 
-body.dark .module-header {
-    border-bottom-color: #475569;
+body.dark .lesson-progress-box {
+    background: #1e293b;
+
+    color: #ffffff;
 }
 
 
-/* Lesson Item Border */
+/* ============================= */
+/* LESSON CONTENT BOX */
+/* ============================= */
 
-body.dark .lesson-item {
-    border-bottom-color: #475569;
+body.dark .lesson-content-section {
+    background: #1e293b;
+
+    color: #ffffff;
 }
 
 
-/* Progress Bars */
+/* ============================= */
+/* COMPLETE BOX */
+/* ============================= */
 
+body.dark .lesson-complete-box {
+    background: #1e293b;
+
+    color: #ffffff;
+}
+
+
+/* ============================= */
+/* COURSE ICON */
+/* ============================= */
+
+body.dark .course-icon {
+    background: #312e81;
+}
+
+
+/* ============================= */
+/* LESSON NUMBER */
+/* ============================= */
+
+body.dark .lesson-number {
+    background: #312e81;
+
+    color: #ffffff;
+}
+
+
+/* ============================= */
+/* PROGRESS BARS */
+/* ============================= */
+
+body.dark .progress-bar,
 body.dark .course-progress-box .progress-bar,
 body.dark .lesson-progress-bar {
     background: #475569;
 }
 
 
-/* Back / Previous Buttons */
+/* ============================= */
+/* MODULE BORDER */
+/* ============================= */
 
-body.dark .back-btn,
-body.dark .previous-btn {
-    background: #334155;
+body.dark .module-header {
+    border-bottom-color: #475569;
+}
+
+
+/* ============================= */
+/* TEXT - NORMAL */
+/* ============================= */
+
+body.dark .section-header p,
+body.dark .course-content p,
+body.dark .course-overview-info p,
+body.dark .course-progress-box p,
+body.dark .module-header p,
+body.dark .lesson-info p,
+body.dark .lesson-content p,
+body.dark .lesson-complete-box p {
+    color: #cbd5e1;
+}
+
+
+/* ============================= */
+/* HEADINGS */
+/* ============================= */
+
+body.dark .section-header h2,
+body.dark .course-content h3,
+body.dark .course-overview-info h2,
+body.dark .lessons-section .section-header h2,
+body.dark .module-header h3,
+body.dark .lesson-info h4,
+body.dark .lesson-content h2,
+body.dark .lesson-content h3,
+body.dark .lesson-complete-box h3 {
     color: #ffffff;
 }
 
 
-/* Lesson Content Text */
+/* ============================= */
+/* PROGRESS TEXT */
+/* ============================= */
 
-body.dark .lesson-content p,
+body.dark .progress-info,
+body.dark .lesson-progress-info {
+    color: #e2e8f0;
+}
+
+
+/* ============================= */
+/* BACK / PREVIOUS BUTTONS */
+/* ============================= */
+
+body.dark .back-btn,
+body.dark .previous-btn {
+    background: #334155;
+
+    color: #ffffff;
+}
+
+body.dark .back-btn:hover,
+body.dark .previous-btn:hover {
+    background: #475569;
+}
+
+
+/* ============================= */
+/* LESSON BUTTON */
+/* ============================= */
+
+body.dark .lesson-btn {
+    color: #ffffff;
+}
+
+
+/* ============================= */
+/* LESSON LIST */
+/* ============================= */
+
 body.dark .lesson-list {
     color: #cbd5e1;
 }
 
 
-/* Small Description Text */
+/* ============================= */
+/* VIDEO REMAINS DARK */
+/* ============================= */
 
-body.dark .course-overview-info p,
-body.dark .course-progress-box p,
-body.dark .module-header p,
-body.dark .lesson-info p,
-body.dark .lesson-complete-box p,
-body.dark .section-header p {
-    color: #cbd5e1;
+body.dark .video-container {
+    background: #0f172a;
 }
+
+
+/* ============================= */
+/* CODE EXAMPLE REMAINS DARK */
+/* ============================= */
+
+body.dark .code-example {
+    background: #0f172a;
+
+    color: #e2e8f0;
+}
+
+
+/* ============================= */
+/* COURSE CATEGORY */
+/* ============================= */
+
+body.dark .course-category {
+    color: #60a5fa;
+}
+
+
+/* ============================= */
+/* LESSON STATUS */
+/* ============================= */
+
+body.dark .lesson-status {
+    color: #ffffff;
+}
+```
