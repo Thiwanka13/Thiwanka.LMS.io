@@ -665,11 +665,12 @@
 
 function startLesson(lessonNumber) {
 
-    alert(
-        "Lesson " +
-        lessonNumber +
-        " selected!"
-    );
+    if (lessonNumber === 10) {
+
+        window.location.href =
+            "lesson.html";
+
+    }
 
 }
 
