@@ -1115,3 +1115,84 @@ body.dark .lesson-status {
     color: #ffffff;
 }
 ```
+
+/* ========================================
+   COURSES.HTML - COMPLETE DARK MODE
+======================================== */
+
+/* Course Cards */
+
+body.dark .course-card {
+    background: #1e293b;
+    color: #ffffff;
+}
+
+
+/* Course Card Headings */
+
+body.dark .course-card h3,
+body.dark .course-content h3 {
+    color: #ffffff;
+}
+
+
+/* Course Card Description */
+
+body.dark .course-card p,
+body.dark .course-content p {
+    color: #cbd5e1;
+}
+
+
+/* Course Icons */
+
+body.dark .course-icon {
+    background: #312e81;
+}
+
+
+/* Progress Area */
+
+body.dark .progress-info {
+    color: #e2e8f0;
+}
+
+
+/* Progress Bar Background */
+
+body.dark .course-card .progress-bar {
+    background: #475569;
+}
+
+
+/* Progress Fill */
+
+body.dark .course-card .progress {
+    background: #6366f1;
+}
+
+
+/* Continue Button */
+
+body.dark .continue-btn {
+    background: #6366f1;
+    color: #ffffff;
+}
+
+
+/* Continue Button Hover */
+
+body.dark .continue-btn:hover {
+    background: #4f46e5;
+}
+
+
+/* Section Header */
+
+body.dark .section-header h2 {
+    color: #ffffff;
+}
+
+body.dark .section-header p {
+    color: #cbd5e1;
+}
