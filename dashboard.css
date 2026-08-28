@@ -825,3 +825,19 @@
     }
 
 }
+
+/* ========================================
+   MY COURSES - DARK MODE BOX BACKGROUNDS
+======================================== */
+
+body.dark .course-overview,
+body.dark .course-progress-box,
+body.dark .lesson-module {
+    background: #1e293b;
+    color: #ffffff;
+}
+
+body.dark .lesson-item {
+    background: #334155;
+    color: #ffffff;
+}
