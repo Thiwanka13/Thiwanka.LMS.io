@@ -1,0 +1,613 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MyLMS - Lesson 02</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="dashboard.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body class="dashboard-body">
+
+
+<!-- ========================================
+     SIDEBAR
+======================================== -->
+
+<aside class="sidebar">
+
+
+    <div class="dashboard-logo">
+        MyLMS
+    </div>
+
+
+    <div class="student-profile">
+
+        <div class="profile-avatar">
+            👨‍🎓
+        </div>
+
+
+        <h3>
+            Student
+        </h3>
+
+
+        <p id="studentEmail">
+            student@mylms.com
+        </p>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+
+        <a href="dashboard.html">
+            🏠 Dashboard
+        </a>
+
+
+        <a
+            href="courses.html"
+            class="active"
+        >
+            📚 My Courses
+        </a>
+
+
+        <a href="#">
+            ❤️ Wishlist
+        </a>
+
+
+        <a href="#">
+            📝 My Quizzes
+        </a>
+
+
+        <a href="#">
+            🏆 Certificates
+        </a>
+
+
+        <a href="#">
+            ⚙️ Settings
+        </a>
+
+
+        <a
+            href="#"
+            id="logoutBtn"
+        >
+            🚪 Logout
+        </a>
+
+
+    </nav>
+
+</aside>
+
+
+
+<!-- ========================================
+     MAIN
+======================================== -->
+
+<main class="dashboard-main">
+
+
+    <!-- TOP BAR -->
+
+    <div class="dashboard-topbar">
+
+        <div>
+
+            <h1>
+                HTML Structure 💻
+            </h1>
+
+
+            <p>
+                Complete HTML & CSS
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-actions">
+
+            <button
+                id="dashboardTheme"
+                aria-label="Toggle Dark Mode"
+            >
+                🌙
+            </button>
+
+
+            <div class="notification">
+                🔔
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ====================================
+         PROGRESS
+    ==================================== -->
+
+    <div class="lesson-progress-box">
+
+        <div class="lesson-progress-info">
+
+            <span>
+                Course Progress
+            </span>
+
+
+            <strong>
+                70%
+            </strong>
+
+        </div>
+
+
+        <div class="lesson-progress-bar">
+
+            <div
+                class="lesson-progress-fill"
+                style="width:70%;"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ====================================
+         VIDEO
+    ==================================== -->
+
+    <section class="lesson-video-section">
+
+        <div class="video-container">
+
+            <div class="video-placeholder">
+
+                <div class="play-icon">
+                    ▶
+                </div>
+
+
+                <h3>
+                    HTML Structure
+                </h3>
+
+
+                <p>
+                    Lesson Video • 15:20
+                </p>
+
+
+                <button
+                    class="video-play-btn"
+                    onclick="playLessonVideo()"
+                >
+                    ▶ Play Lesson
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================
+         CONTENT
+    ==================================== -->
+
+    <section class="lesson-content-section">
+
+
+        <div class="lesson-content">
+
+
+            <span class="course-category">
+                Module 01 • Lesson 02
+            </span>
+
+
+            <h2>
+                HTML Structure
+            </h2>
+
+
+            <p>
+                In this lesson, you will learn about
+                the basic structure of an HTML document
+                and how different HTML elements work
+                together.
+            </p>
+
+
+            <h3>
+                HTML Document Structure
+            </h3>
+
+
+            <p>
+                An HTML document normally contains
+                a document type declaration, an html
+                element, a head section and a body section.
+            </p>
+
+
+            <h3>
+                The HTML Element
+            </h3>
+
+
+            <p>
+                The html element is the root element
+                of an HTML document. All other elements
+                are placed inside it.
+            </p>
+
+
+            <!-- CODE -->
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+    &lt;head&gt;
+
+        &lt;title&gt;
+            My Website
+        &lt;/title&gt;
+
+    &lt;/head&gt;
+
+
+    &lt;body&gt;
+
+        &lt;h1&gt;
+            Welcome
+        &lt;/h1&gt;
+
+        &lt;p&gt;
+            This is my website.
+        &lt;/p&gt;
+
+    &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+
+            <h3>
+                Important Sections
+            </h3>
+
+
+            <ul class="lesson-list">
+
+                <li>
+                    <strong>&lt;html&gt;</strong>
+                    — Root element.
+                </li>
+
+
+                <li>
+                    <strong>&lt;head&gt;</strong>
+                    — Contains page information.
+                </li>
+
+
+                <li>
+                    <strong>&lt;title&gt;</strong>
+                    — Defines the page title.
+                </li>
+
+
+                <li>
+                    <strong>&lt;body&gt;</strong>
+                    — Contains visible page content.
+                </li>
+
+            </ul>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================
+         COMPLETE
+    ==================================== -->
+
+    <section class="lesson-complete-box">
+
+
+        <div>
+
+            <h3>
+                🎯 Finish this lesson
+            </h3>
+
+
+            <p id="completeMessage">
+                Mark this lesson as completed
+                when you finish learning.
+            </p>
+
+        </div>
+
+
+        <button
+            id="completeLessonBtn"
+            onclick="completeLesson()"
+        >
+            ✓ Mark as Complete
+        </button>
+
+
+    </section>
+
+
+
+    <!-- ====================================
+         NAVIGATION
+    ==================================== -->
+
+    <div class="lesson-navigation">
+
+
+        <button
+            class="previous-btn"
+            onclick="previousLesson()"
+        >
+            ← Previous Lesson
+        </button>
+
+
+        <button
+            class="next-btn"
+            onclick="nextLesson()"
+        >
+            Next Lesson →
+        </button>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- ========================================
+     DASHBOARD JS
+======================================== -->
+
+<script src="dashboard.js"></script>
+
+
+<script>
+
+
+/* ========================================
+   PLAY VIDEO
+======================================== */
+
+function playLessonVideo() {
+
+    alert(
+        "Lesson 02 video will be connected soon."
+    );
+
+}
+
+
+
+/* ========================================
+   COMPLETE LESSON
+======================================== */
+
+function completeLesson() {
+
+
+    localStorage.setItem(
+        "lesson2Completed",
+        "true"
+    );
+
+
+    const button =
+        document.getElementById(
+            "completeLessonBtn"
+        );
+
+
+    const message =
+        document.getElementById(
+            "completeMessage"
+        );
+
+
+    if (button) {
+
+        button.innerHTML =
+            "✓ Lesson Completed";
+
+        button.classList.add(
+            "completed-button"
+        );
+
+    }
+
+
+    if (message) {
+
+        message.innerHTML =
+            "Great job! You completed Lesson 02.";
+
+    }
+
+
+    alert(
+        "Congratulations! Lesson 02 completed."
+    );
+
+}
+
+
+
+/* ========================================
+   LOAD STATUS
+======================================== */
+
+function loadLessonStatus() {
+
+
+    const completed =
+        localStorage.getItem(
+            "lesson2Completed"
+        );
+
+
+    const button =
+        document.getElementById(
+            "completeLessonBtn"
+        );
+
+
+    const message =
+        document.getElementById(
+            "completeMessage"
+        );
+
+
+    if (
+        completed === "true"
+    ) {
+
+        if (button) {
+
+            button.innerHTML =
+                "✓ Lesson Completed";
+
+            button.classList.add(
+                "completed-button"
+            );
+
+        }
+
+
+        if (message) {
+
+            message.innerHTML =
+                "Great job! You completed Lesson 02.";
+
+        }
+
+    }
+
+}
+
+
+
+/* ========================================
+   PREVIOUS LESSON
+======================================== */
+
+function previousLesson() {
+
+    window.location.href =
+        "lesson.html";
+
+}
+
+
+
+/* ========================================
+   NEXT LESSON
+======================================== */
+
+function nextLesson() {
+
+
+    const completed =
+        localStorage.getItem(
+            "lesson2Completed"
+        );
+
+
+    if (
+        completed === "true"
+    ) {
+
+        alert(
+            "Lesson 03 will be available soon."
+        );
+
+    } else {
+
+        alert(
+            "Please complete Lesson 02 first."
+        );
+
+    }
+
+}
+
+
+
+/* ========================================
+   LOAD STATUS
+======================================== */
+
+loadLessonStatus();
+
+
+</script>
+
+
+</body>
+
+</html>
+```
