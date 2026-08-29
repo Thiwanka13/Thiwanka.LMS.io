@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -202,9 +203,11 @@
                     Web Development
                 </span>
 
+
                 <h3>
                     Complete HTML & CSS
                 </h3>
+
 
                 <p>
                     Learn HTML and CSS from beginner
@@ -223,7 +226,7 @@
                             Progress
                         </span>
 
-                        <span>
+                        <span id="htmlProgressText">
                             65%
                         </span>
 
@@ -233,6 +236,7 @@
                     <div class="progress-bar">
 
                         <div
+                            id="htmlProgressBar"
                             class="progress"
                             style="width:65%;"
                         ></div>
@@ -285,17 +289,17 @@
                     Programming
                 </span>
 
+
                 <h3>
                     Python Programming
                 </h3>
+
 
                 <p>
                     Learn Python programming from
                     basics to advanced concepts.
                 </p>
 
-
-                <!-- Progress -->
 
                 <div class="progress-area">
 
@@ -367,17 +371,17 @@
                     Data Science
                 </span>
 
+
                 <h3>
                     Data Science Fundamentals
                 </h3>
+
 
                 <p>
                     Learn Python, statistics, data
                     analysis and visualization.
                 </p>
 
-
-                <!-- Progress -->
 
                 <div class="progress-area">
 
@@ -449,17 +453,17 @@
                     Artificial Intelligence
                 </span>
 
+
                 <h3>
                     Machine Learning & AI
                 </h3>
+
 
                 <p>
                     Explore machine learning algorithms,
                     neural networks and artificial intelligence.
                 </p>
 
-
-                <!-- Progress -->
 
                 <div class="progress-area">
 
@@ -531,17 +535,17 @@
                     Web Development
                 </span>
 
+
                 <h3>
                     JavaScript Masterclass
                 </h3>
+
 
                 <p>
                     Master JavaScript and build
                     interactive web applications.
                 </p>
 
-
-                <!-- Progress -->
 
                 <div class="progress-area">
 
@@ -613,17 +617,17 @@
                     Database
                 </span>
 
+
                 <h3>
                     MySQL Database
                 </h3>
+
 
                 <p>
                     Learn SQL, database design,
                     queries and MySQL fundamentals.
                 </p>
 
-
-                <!-- Progress -->
 
                 <div class="progress-area">
 
@@ -693,6 +697,11 @@
 
 <script>
 
+
+/* ========================================
+   OPEN COURSE
+======================================== */
+
 function openCourse(course) {
 
     if (course === "html-css") {
@@ -703,9 +712,85 @@ function openCourse(course) {
     }
 
 }
+
+
+
+/* ========================================
+   UPDATE HTML COURSE PROGRESS
+======================================== */
+
+function updateHTMLProgress() {
+
+    const completed =
+        localStorage.getItem(
+            "lesson1Completed"
+        );
+
+
+    const progressText =
+        document.getElementById(
+            "htmlProgressText"
+        );
+
+
+    const progressBar =
+        document.getElementById(
+            "htmlProgressBar"
+        );
+
+
+    /*
+       Default progress
+       Lesson 01 not completed
+    */
+
+    let progress = 65;
+
+
+    /*
+       Lesson 01 completed
+       Increase progress to 70%
+    */
+
+    if (
+        completed === "true"
+    ) {
+
+        progress = 70;
+
+    }
+
+
+    if (progressText) {
+
+        progressText.innerHTML =
+            progress + "%";
+
+    }
+
+
+    if (progressBar) {
+
+        progressBar.style.width =
+            progress + "%";
+
+    }
+
+}
+
+
+
+/* ========================================
+   LOAD COURSE PROGRESS
+======================================== */
+
+updateHTMLProgress();
+
+
 </script>
 
 
 </body>
 
 </html>
+```
