@@ -11,24 +11,12 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>MyLMS - Lesson</title>
+    <title>MyLMS - Lesson 01</title>
 
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Main CSS -->
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    <link rel="stylesheet" href="dashboard.css">
 
-
-    <!-- Dashboard CSS -->
-    <link
-        rel="stylesheet"
-        href="dashboard.css"
-    >
-
-
-    <!-- Google Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"
@@ -46,15 +34,10 @@
 
 <aside class="sidebar">
 
-
-    <!-- LOGO -->
-
     <div class="dashboard-logo">
         MyLMS
     </div>
 
-
-    <!-- STUDENT PROFILE -->
 
     <div class="student-profile">
 
@@ -62,11 +45,9 @@
             👨‍🎓
         </div>
 
-
         <h3>
             Student
         </h3>
-
 
         <p id="studentEmail">
             student@mylms.com
@@ -75,15 +56,11 @@
     </div>
 
 
-    <!-- SIDEBAR NAVIGATION -->
-
     <nav class="sidebar-nav">
-
 
         <a href="dashboard.html">
             🏠 Dashboard
         </a>
-
 
         <a
             href="courses.html"
@@ -92,26 +69,21 @@
             📚 My Courses
         </a>
 
-
         <a href="#">
             ❤️ Wishlist
         </a>
-
 
         <a href="#">
             📝 My Quizzes
         </a>
 
-
         <a href="#">
             🏆 Certificates
         </a>
 
-
         <a href="#">
             ⚙️ Settings
         </a>
-
 
         <a
             href="#"
@@ -133,19 +105,15 @@
 <main class="dashboard-main">
 
 
-    <!-- ====================================
-         TOP BAR
-    ==================================== -->
+    <!-- TOP BAR -->
 
     <div class="dashboard-topbar">
-
 
         <div>
 
             <h1>
                 Introduction to HTML 💻
             </h1>
-
 
             <p>
                 Complete HTML & CSS
@@ -154,12 +122,7 @@
         </div>
 
 
-        <!-- DASHBOARD ACTIONS -->
-
         <div class="dashboard-actions">
-
-
-            <!-- THEME BUTTON -->
 
             <button
                 id="dashboardTheme"
@@ -167,9 +130,6 @@
             >
                 🌙
             </button>
-
-
-            <!-- NOTIFICATION -->
 
             <div class="notification">
                 🔔
@@ -187,27 +147,23 @@
 
     <div class="lesson-progress-box">
 
-
         <div class="lesson-progress-info">
-
 
             <span>
                 Course Progress
             </span>
 
-
-            <strong>
+            <strong id="progressText">
                 65%
             </strong>
 
         </div>
 
 
-        <!-- PROGRESS BAR -->
-
         <div class="lesson-progress-bar">
 
             <div
+                id="lessonProgressFill"
                 class="lesson-progress-fill"
                 style="width:65%;"
             ></div>
@@ -219,52 +175,22 @@
 
 
     <!-- ====================================
-         VIDEO SECTION
+         VIDEO
     ==================================== -->
 
     <section class="lesson-video-section">
 
+        <div class="video-container">
 
-        ```html
-<div class="video-container">
-
-    <iframe
-        width="100%"
-        height="420"
-        src="https://www.youtube.com/embed/_OY5tqhsZtg"
-        title="Introduction to HTML"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
-
-</div>
-```
-
-
-
-                <!-- VIDEO TITLE -->
-
-                <h3>
-                    Introduction to HTML
-                </h3>
-
-
-                <p>
-                    Lesson Video • 12:35
-                </p>
-
-
-                <!-- PLAY BUTTON -->
-
-                <button
-                    class="video-play-btn"
-                    onclick="playLessonVideo()"
-                >
-                    ▶ Play Lesson
-                </button>
-
-            </div>
+            <iframe
+                width="100%"
+                height="420"
+                src="https://www.youtube.com/embed/_OY5tqhsZtg"
+                title="Introduction to HTML"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
 
         </div>
 
@@ -278,36 +204,24 @@
 
     <section class="lesson-content-section">
 
-
         <div class="lesson-content">
-
-
-            <!-- LESSON CATEGORY -->
 
             <span class="course-category">
                 Module 01 • Lesson 01
             </span>
 
 
-            <!-- LESSON TITLE -->
-
             <h2>
                 Introduction to HTML
             </h2>
 
 
-            <!-- INTRODUCTION -->
-
             <p>
-
                 HTML stands for HyperText Markup Language.
                 It is the standard language used to create
                 and structure content on websites.
-
             </p>
 
-
-            <!-- WHAT IS HTML -->
 
             <h3>
                 What is HTML?
@@ -315,16 +229,12 @@
 
 
             <p>
-
                 HTML provides the basic structure of a webpage.
                 It allows us to create headings, paragraphs,
                 images, links, lists, tables and many other
                 elements.
-
             </p>
 
-
-            <!-- BASIC STRUCTURE -->
 
             <h3>
                 Basic HTML Structure
@@ -332,18 +242,13 @@
 
 
             <p>
-
                 Every HTML document normally starts with a
                 document declaration followed by the HTML
                 structure.
-
             </p>
 
 
-
-            <!-- ====================================
-                 CODE EXAMPLE
-            ==================================== -->
+            <!-- CODE -->
 
             <div class="code-example">
 
@@ -378,9 +283,6 @@
             </div>
 
 
-
-            <!-- IMPORTANT ELEMENTS -->
-
             <h3>
                 Important HTML Elements
             </h3>
@@ -388,53 +290,27 @@
 
             <ul class="lesson-list">
 
-
                 <li>
-
-                    <strong>
-                        &lt;h1&gt;
-                    </strong>
-
+                    <strong>&lt;h1&gt;</strong>
                     — Creates a heading.
-
                 </li>
 
-
                 <li>
-
-                    <strong>
-                        &lt;p&gt;
-                    </strong>
-
+                    <strong>&lt;p&gt;</strong>
                     — Creates a paragraph.
-
                 </li>
 
-
                 <li>
-
-                    <strong>
-                        &lt;a&gt;
-                    </strong>
-
+                    <strong>&lt;a&gt;</strong>
                     — Creates a hyperlink.
-
                 </li>
-
 
                 <li>
-
-                    <strong>
-                        &lt;img&gt;
-                    </strong>
-
+                    <strong>&lt;img&gt;</strong>
                     — Adds an image.
-
                 </li>
-
 
             </ul>
-
 
         </div>
 
@@ -448,25 +324,19 @@
 
     <section class="lesson-complete-box">
 
-
         <div>
-
 
             <h3>
                 🎯 Finish this lesson
             </h3>
 
-
-            <p>
+            <p id="completeMessage">
                 Mark this lesson as completed
                 when you finish learning.
             </p>
 
-
         </div>
 
-
-        <!-- COMPLETE BUTTON -->
 
         <button
             id="completeLessonBtn"
@@ -475,29 +345,23 @@
             ✓ Mark as Complete
         </button>
 
-
     </section>
 
 
 
     <!-- ====================================
-         LESSON NAVIGATION
+         NAVIGATION
     ==================================== -->
 
     <div class="lesson-navigation">
-
-
-        <!-- PREVIOUS -->
 
         <button
             class="previous-btn"
             onclick="previousLesson()"
         >
-            ← Previous Lesson
+            ← Back to Courses
         </button>
 
-
-        <!-- NEXT -->
 
         <button
             class="next-btn"
@@ -505,7 +369,6 @@
         >
             Next Lesson →
         </button>
-
 
     </div>
 
@@ -515,37 +378,24 @@
 
 
 <!-- ========================================
-     DASHBOARD JAVASCRIPT
+     DASHBOARD JS
 ======================================== -->
 
 <script src="dashboard.js"></script>
 
 
-
 <script>
-
-
-/* ========================================
-   PLAY LESSON VIDEO
-======================================== */
-
-function playLessonVideo() {
-
-
-    alert(
-        "Lesson video will be connected in the next step."
-    );
-
-
-}
-
-
 
 /* ========================================
    COMPLETE LESSON
 ======================================== */
 
 function completeLesson() {
+
+    localStorage.setItem(
+        "lesson1Completed",
+        "true"
+    );
 
 
     const button =
@@ -554,38 +404,40 @@ function completeLesson() {
         );
 
 
-    if (!button) {
+    const message =
+        document.getElementById(
+            "completeMessage"
+        );
 
-        return;
+
+    if (button) {
+
+        button.innerHTML =
+            "✓ Lesson Completed";
+
+        button.classList.add(
+            "completed-button"
+        );
 
     }
 
 
-    /* SAVE COMPLETION */
+    if (message) {
 
-    localStorage.setItem(
-        "lesson1Completed",
-        "true"
-    );
+        message.innerHTML =
+            "Great job! You completed Lesson 01.";
 
-
-    /* CHANGE BUTTON */
-
-    button.innerHTML =
-        "✓ Lesson Completed";
+    }
 
 
-    button.classList.add(
-        "completed-button"
-    );
+    /* UPDATE COURSE PROGRESS */
 
+    updateProgress();
 
-    /* MESSAGE */
 
     alert(
-        "Congratulations! Lesson completed."
+        "Congratulations! Lesson 01 completed."
     );
-
 
 }
 
@@ -596,7 +448,6 @@ function completeLesson() {
 ======================================== */
 
 function loadLessonStatus() {
-
 
     const completed =
         localStorage.getItem(
@@ -610,20 +461,92 @@ function loadLessonStatus() {
         );
 
 
-    if (
-        completed === "true" &&
-        button
-    ) {
-
-
-        button.innerHTML =
-            "✓ Lesson Completed";
-
-
-        button.classList.add(
-            "completed-button"
+    const message =
+        document.getElementById(
+            "completeMessage"
         );
 
+
+    if (
+        completed === "true"
+    ) {
+
+        if (button) {
+
+            button.innerHTML =
+                "✓ Lesson Completed";
+
+            button.classList.add(
+                "completed-button"
+            );
+
+        }
+
+
+        if (message) {
+
+            message.innerHTML =
+                "Great job! You completed Lesson 01.";
+
+        }
+
+    }
+
+
+    updateProgress();
+
+}
+
+
+
+/* ========================================
+   UPDATE PROGRESS
+======================================== */
+
+function updateProgress() {
+
+    const completed =
+        localStorage.getItem(
+            "lesson1Completed"
+        );
+
+
+    const progressText =
+        document.getElementById(
+            "progressText"
+        );
+
+
+    const progressFill =
+        document.getElementById(
+            "lessonProgressFill"
+        );
+
+
+    let progress = 65;
+
+
+    if (
+        completed === "true"
+    ) {
+
+        progress = 70;
+
+    }
+
+
+    if (progressText) {
+
+        progressText.innerHTML =
+            progress + "%";
+
+    }
+
+
+    if (progressFill) {
+
+        progressFill.style.width =
+            progress + "%";
 
     }
 
@@ -637,10 +560,8 @@ function loadLessonStatus() {
 
 function previousLesson() {
 
-
     window.location.href =
         "courses.html";
-
 
 }
 
@@ -652,7 +573,6 @@ function previousLesson() {
 
 function nextLesson() {
 
-
     const completed =
         localStorage.getItem(
             "lesson1Completed"
@@ -663,19 +583,14 @@ function nextLesson() {
         completed === "true"
     ) {
 
-
-        alert(
-            "Next lesson will be available soon."
-        );
-
+        window.location.href =
+            "lesson2.html";
 
     } else {
 
-
         alert(
-            "Please complete this lesson first."
+            "Please complete Lesson 01 first."
         );
-
 
     }
 
@@ -684,11 +599,10 @@ function nextLesson() {
 
 
 /* ========================================
-   LOAD SAVED LESSON STATUS
+   LOAD DATA
 ======================================== */
 
 loadLessonStatus();
-
 
 </script>
 
