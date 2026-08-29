@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,13 +13,10 @@
 
     <title>MyLMS - Course Lessons</title>
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Dashboard CSS -->
     <link rel="stylesheet" href="dashboard.css">
 
-    <!-- Google Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"
@@ -41,8 +39,6 @@
     </div>
 
 
-    <!-- STUDENT PROFILE -->
-
     <div class="student-profile">
 
         <div class="profile-avatar">
@@ -59,8 +55,6 @@
 
     </div>
 
-
-    <!-- SIDEBAR NAVIGATION -->
 
     <nav class="sidebar-nav">
 
@@ -105,9 +99,7 @@
 <main class="dashboard-main">
 
 
-    <!-- =========================
-         TOP BAR
-    ========================= -->
+    <!-- TOP BAR -->
 
     <div class="dashboard-topbar">
 
@@ -172,7 +164,7 @@
                     Course Progress
                 </span>
 
-                <span>
+                <span id="courseProgressText">
                     65%
                 </span>
 
@@ -182,13 +174,14 @@
             <div class="progress-bar">
 
                 <div
+                    id="courseProgress"
                     class="progress"
                     style="width:65%;"
                 ></div>
 
             </div>
 
-            <p>
+            <p id="lessonCountText">
                 13 of 20 lessons completed
             </p>
 
@@ -238,16 +231,20 @@
 
                 </div>
 
-                <span>
+                <span id="module1Status">
                     ✓ Completed
                 </span>
 
             </div>
 
 
-            <!-- Lesson 1 -->
 
-            <div class="lesson-item completed">
+            <!-- LESSON 1 -->
+
+            <div
+                class="lesson-item"
+                id="lesson1"
+            >
 
                 <div class="lesson-number">
                     01
@@ -265,16 +262,31 @@
 
                 </div>
 
-                <span class="lesson-status">
+                <span
+                    class="lesson-status"
+                    id="lesson1Status"
+                >
                     ✓
                 </span>
+
+                <a
+                    href="lesson.html"
+                    class="lesson-btn"
+                    id="lesson1Btn"
+                >
+                    Review
+                </a>
 
             </div>
 
 
-            <!-- Lesson 2 -->
 
-            <div class="lesson-item completed">
+            <!-- LESSON 2 -->
+
+            <div
+                class="lesson-item"
+                id="lesson2"
+            >
 
                 <div class="lesson-number">
                     02
@@ -292,16 +304,31 @@
 
                 </div>
 
-                <span class="lesson-status">
-                    ✓
+                <span
+                    class="lesson-status"
+                    id="lesson2Status"
+                >
+                    🔒
                 </span>
+
+                <a
+                    href="lesson2.html"
+                    class="lesson-btn"
+                    id="lesson2Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
 
-            <!-- Lesson 3 -->
 
-            <div class="lesson-item completed">
+            <!-- LESSON 3 -->
+
+            <div
+                class="lesson-item"
+                id="lesson3"
+            >
 
                 <div class="lesson-number">
                     03
@@ -319,16 +346,31 @@
 
                 </div>
 
-                <span class="lesson-status">
-                    ✓
+                <span
+                    class="lesson-status"
+                    id="lesson3Status"
+                >
+                    🔒
                 </span>
+
+                <a
+                    href="lesson3.html"
+                    class="lesson-btn"
+                    id="lesson3Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
 
-            <!-- Lesson 4 -->
 
-            <div class="lesson-item completed">
+            <!-- LESSON 4 -->
+
+            <div
+                class="lesson-item"
+                id="lesson4"
+            >
 
                 <div class="lesson-number">
                     04
@@ -346,16 +388,31 @@
 
                 </div>
 
-                <span class="lesson-status">
-                    ✓
+                <span
+                    class="lesson-status"
+                    id="lesson4Status"
+                >
+                    🔒
                 </span>
+
+                <a
+                    href="lesson4.html"
+                    class="lesson-btn"
+                    id="lesson4Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
 
-            <!-- Lesson 5 -->
 
-            <div class="lesson-item completed">
+            <!-- LESSON 5 -->
+
+            <div
+                class="lesson-item"
+                id="lesson5"
+            >
 
                 <div class="lesson-number">
                     05
@@ -373,9 +430,20 @@
 
                 </div>
 
-                <span class="lesson-status">
-                    ✓
+                <span
+                    class="lesson-status"
+                    id="lesson5Status"
+                >
+                    🔒
                 </span>
+
+                <a
+                    href="lesson5.html"
+                    class="lesson-btn"
+                    id="lesson5Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
@@ -410,9 +478,13 @@
             </div>
 
 
-            <!-- Lesson 6 -->
 
-            <div class="lesson-item completed">
+            <!-- LESSON 6 -->
+
+            <div
+                class="lesson-item"
+                id="lesson6"
+            >
 
                 <div class="lesson-number">
                     06
@@ -430,16 +502,31 @@
 
                 </div>
 
-                <span class="lesson-status">
-                    ✓
+                <span
+                    class="lesson-status"
+                    id="lesson6Status"
+                >
+                    🔒
                 </span>
+
+                <a
+                    href="lesson6.html"
+                    class="lesson-btn"
+                    id="lesson6Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
 
-            <!-- Lesson 7 -->
 
-            <div class="lesson-item completed">
+            <!-- LESSON 7 -->
+
+            <div
+                class="lesson-item"
+                id="lesson7"
+            >
 
                 <div class="lesson-number">
                     07
@@ -457,16 +544,31 @@
 
                 </div>
 
-                <span class="lesson-status">
-                    ✓
+                <span
+                    class="lesson-status"
+                    id="lesson7Status"
+                >
+                    🔒
                 </span>
+
+                <a
+                    href="lesson7.html"
+                    class="lesson-btn"
+                    id="lesson7Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
 
-            <!-- Lesson 8 -->
 
-            <div class="lesson-item completed">
+            <!-- LESSON 8 -->
+
+            <div
+                class="lesson-item"
+                id="lesson8"
+            >
 
                 <div class="lesson-number">
                     08
@@ -484,16 +586,31 @@
 
                 </div>
 
-                <span class="lesson-status">
-                    ✓
+                <span
+                    class="lesson-status"
+                    id="lesson8Status"
+                >
+                    🔒
                 </span>
+
+                <a
+                    href="lesson8.html"
+                    class="lesson-btn"
+                    id="lesson8Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
 
-            <!-- Lesson 9 -->
 
-            <div class="lesson-item completed">
+            <!-- LESSON 9 -->
+
+            <div
+                class="lesson-item"
+                id="lesson9"
+            >
 
                 <div class="lesson-number">
                     09
@@ -511,16 +628,31 @@
 
                 </div>
 
-                <span class="lesson-status">
-                    ✓
+                <span
+                    class="lesson-status"
+                    id="lesson9Status"
+                >
+                    🔒
                 </span>
+
+                <a
+                    href="lesson9.html"
+                    class="lesson-btn"
+                    id="lesson9Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
 
-            <!-- Lesson 10 -->
 
-            <div class="lesson-item current">
+            <!-- LESSON 10 -->
+
+            <div
+                class="lesson-item"
+                id="lesson10"
+            >
 
                 <div class="lesson-number">
                     10
@@ -538,9 +670,20 @@
 
                 </div>
 
-          <a href="lesson.html" class="lesson-btn">
-    Continue
-</a>
+                <span
+                    class="lesson-status"
+                    id="lesson10Status"
+                >
+                    🔒
+                </span>
+
+                <a
+                    href="lesson10.html"
+                    class="lesson-btn"
+                    id="lesson10Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
@@ -575,7 +718,13 @@
             </div>
 
 
-            <div class="lesson-item locked">
+
+            <!-- LESSON 11 -->
+
+            <div
+                class="lesson-item"
+                id="lesson11"
+            >
 
                 <div class="lesson-number">
                     11
@@ -593,14 +742,31 @@
 
                 </div>
 
-                <span class="lesson-status">
+                <span
+                    class="lesson-status"
+                    id="lesson11Status"
+                >
                     🔒
                 </span>
+
+                <a
+                    href="lesson11.html"
+                    class="lesson-btn"
+                    id="lesson11Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
 
-            <div class="lesson-item locked">
+
+            <!-- LESSON 12 -->
+
+            <div
+                class="lesson-item"
+                id="lesson12"
+            >
 
                 <div class="lesson-number">
                     12
@@ -618,22 +784,32 @@
 
                 </div>
 
-                <span class="lesson-status">
+                <span
+                    class="lesson-status"
+                    id="lesson12Status"
+                >
                     🔒
                 </span>
+
+                <a
+                    href="lesson12.html"
+                    class="lesson-btn"
+                    id="lesson12Btn"
+                >
+                    Continue
+                </a>
 
             </div>
 
         </div>
 
 
+
     </section>
 
 
 
-    <!-- =========================
-         BACK BUTTON
-    ========================= -->
+    <!-- BACK BUTTON -->
 
     <div class="back-button-container">
 
@@ -660,17 +836,437 @@
 
 <script>
 
-function startLesson(lessonNumber) {
 
-    if (lessonNumber === 10) {
+/* ========================================
+   LESSON DATA
+======================================== */
 
-        window.location.href =
-            "lesson.html";
+const lessons = {
+
+    1: {
+        page: "lesson.html",
+        key: "lesson1Completed"
+    },
+
+    2: {
+        page: "lesson2.html",
+        key: "lesson2Completed"
+    },
+
+    3: {
+        page: "lesson3.html",
+        key: "lesson3Completed"
+    },
+
+    4: {
+        page: "lesson4.html",
+        key: "lesson4Completed"
+    },
+
+    5: {
+        page: "lesson5.html",
+        key: "lesson5Completed"
+    },
+
+    6: {
+        page: "lesson6.html",
+        key: "lesson6Completed"
+    },
+
+    7: {
+        page: "lesson7.html",
+        key: "lesson7Completed"
+    },
+
+    8: {
+        page: "lesson8.html",
+        key: "lesson8Completed"
+    },
+
+    9: {
+        page: "lesson9.html",
+        key: "lesson9Completed"
+    },
+
+    10: {
+        page: "lesson10.html",
+        key: "lesson10Completed"
+    },
+
+    11: {
+        page: "lesson11.html",
+        key: "lesson11Completed"
+    },
+
+    12: {
+        page: "lesson12.html",
+        key: "lesson12Completed"
+    }
+
+};
+
+
+
+/* ========================================
+   CHECK LESSON STATUS
+======================================== */
+
+function isCompleted(number) {
+
+    return (
+        localStorage.getItem(
+            lessons[number].key
+        ) === "true"
+    );
+
+}
+
+
+
+/* ========================================
+   LESSON ACCESS
+======================================== */
+
+function canOpenLesson(number) {
+
+    /*
+       Lesson 01 is always available.
+    */
+
+    if (number === 1) {
+
+        return true;
+
+    }
+
+
+    /*
+       Every next lesson requires
+       previous lesson completion.
+    */
+
+    return isCompleted(number - 1);
+
+}
+
+
+
+/* ========================================
+   UPDATE LESSON UI
+======================================== */
+
+function updateLessons() {
+
+    for (
+        let number = 1;
+        number <= 12;
+        number++
+    ) {
+
+        const item =
+            document.getElementById(
+                "lesson" + number
+            );
+
+        const status =
+            document.getElementById(
+                "lesson" + number + "Status"
+            );
+
+        const button =
+            document.getElementById(
+                "lesson" + number + "Btn"
+            );
+
+
+        if (!item || !status || !button) {
+
+            continue;
+
+        }
+
+
+        const completed =
+            isCompleted(number);
+
+
+        const unlocked =
+            canOpenLesson(number);
+
+
+
+        /* =========================
+           COMPLETED
+        ========================= */
+
+        if (completed) {
+
+            item.classList.remove("locked");
+
+            item.classList.remove("current");
+
+            item.classList.add("completed");
+
+
+            status.innerHTML = "✓";
+
+
+            button.innerHTML =
+                "Review";
+
+
+            button.href =
+                lessons[number].page;
+
+
+            button.style.pointerEvents =
+                "auto";
+
+
+            button.style.opacity =
+                "1";
+
+            continue;
+
+        }
+
+
+
+        /* =========================
+           UNLOCKED
+        ========================= */
+
+        if (unlocked) {
+
+            item.classList.remove("locked");
+
+            item.classList.add("current");
+
+
+            status.innerHTML =
+                "▶";
+
+
+            button.innerHTML =
+                "Continue";
+
+
+            button.href =
+                lessons[number].page;
+
+
+            button.style.pointerEvents =
+                "auto";
+
+
+            button.style.opacity =
+                "1";
+
+            continue;
+
+        }
+
+
+
+        /* =========================
+           LOCKED
+        ========================= */
+
+        item.classList.add("locked");
+
+        item.classList.remove("current");
+
+        item.classList.remove("completed");
+
+
+        status.innerHTML =
+            "🔒";
+
+
+        button.innerHTML =
+            "Locked";
+
+
+        button.removeAttribute("href");
+
+
+        button.style.pointerEvents =
+            "none";
+
+
+        button.style.opacity =
+            "0.5";
 
     }
 
 }
 
+
+
+/* ========================================
+   COURSE PROGRESS
+======================================== */
+
+function updateCourseProgress() {
+
+    let completedCount = 0;
+
+
+    for (
+        let number = 1;
+        number <= 12;
+        number++
+    ) {
+
+        if (
+            isCompleted(number)
+        ) {
+
+            completedCount++;
+
+        }
+
+    }
+
+
+    /*
+       Existing course starts at 13/20.
+       We add newly completed lessons
+       from this LMS flow.
+    */
+
+    const baseCompleted = 13;
+
+    const totalCompleted =
+        baseCompleted +
+        completedCount;
+
+
+    const totalLessons = 20;
+
+
+    let percentage =
+        Math.round(
+            (totalCompleted / totalLessons) * 100
+        );
+
+
+    /*
+       Maximum 100%
+    */
+
+    if (percentage > 100) {
+
+        percentage = 100;
+
+    }
+
+
+    const progressText =
+        document.getElementById(
+            "courseProgressText"
+        );
+
+
+    const progressBar =
+        document.getElementById(
+            "courseProgress"
+        );
+
+
+    const countText =
+        document.getElementById(
+            "lessonCountText"
+        );
+
+
+    if (progressText) {
+
+        progressText.innerHTML =
+            percentage + "%";
+
+    }
+
+
+    if (progressBar) {
+
+        progressBar.style.width =
+            percentage + "%";
+
+    }
+
+
+    if (countText) {
+
+        countText.innerHTML =
+            totalCompleted +
+            " of 20 lessons completed";
+
+    }
+
+}
+
+
+
+/* ========================================
+   PREVENT LOCKED LESSON CLICK
+======================================== */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        const button =
+            event.target.closest(
+                ".lesson-btn"
+            );
+
+
+        if (!button) {
+
+            return;
+
+        }
+
+
+        const id =
+            button.id;
+
+
+        const number =
+            parseInt(
+                id.replace(
+                    "lesson",
+                    ""
+                ).replace(
+                    "Btn",
+                    ""
+                )
+            );
+
+
+        if (
+            number &&
+            !canOpenLesson(number)
+        ) {
+
+            event.preventDefault();
+
+
+            alert(
+                "Please complete the previous lesson first."
+            );
+
+        }
+
+    }
+);
+
+
+
+/* ========================================
+   BACK TO COURSES
+======================================== */
 
 function goBack() {
 
@@ -679,9 +1275,21 @@ function goBack() {
 
 }
 
+
+
+/* ========================================
+   INITIALIZE
+======================================== */
+
+updateLessons();
+
+updateCourseProgress();
+
+
 </script>
 
 
 </body>
 
 </html>
+```
